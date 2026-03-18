@@ -39,7 +39,10 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//Tags"
+    "//Tags",
+    "//ESM-3",
+    "//SAPROT",
+    "//images"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
@@ -54,7 +57,7 @@
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,
-  "inlineContextExpanded": true,
+  "inlineContextExpanded": false,
   "inlineContextProperties": true,
   "inlineContextSectionsExpanded": true,
   "banners": true,

@@ -11,10 +11,12 @@
             "id": "623941b71fb45f85",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "mk-space",
+              "state": {
+                "path": "images"
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "images"
             }
           }
         ]
@@ -195,12 +197,15 @@
   },
   "active": "35c659a16fbdf9c6",
   "lastOpenFiles": [
+    "images/images.md",
+    "images",
     "ESM-3/ESM-3.md",
+    "SAPROT/SAPROT.md",
+    "ESM-3/TUTORIAL.md",
+    "SAPROT/TUTORIAL.md",
     "ESM-3",
     "Tags/Tags.md",
-    "SAPROT/TUTORIAL.md",
     "Untitled.md",
-    "SAPROT/SAPROT.md",
     "README.md",
     "SAPROT",
     "Tags"

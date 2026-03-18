@@ -5,4 +5,14 @@ tags:
   - PLM
   - tutorial
 ---
-Tutorial based on the saprothub repository
+**Tutorial based on the SaprotHub repository**
+
+```embed
+title: "SaprotHub/tutorial.md at main · westlake-repl/SaprotHub"
+image: "https://opengraph.githubassets.com/07454ea73bc5ee01ed636d6224c726782492888c37e09fcada3e22ae4dbcfbd5/westlake-repl/SaprotHub"
+description: "Making Protein Language Modeling Accessible to All Biologists - westlake-repl/SaprotHub"
+url: "https://github.com/westlake-repl/SaprotHub/blob/main/tutorial.md"
+favicon: ""
+aspectRatio: "50"
+```
+

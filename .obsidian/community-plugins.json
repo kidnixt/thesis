@@ -3,5 +3,7 @@
   "obsidian-excalidraw-plugin",
   "obsidian-git",
   "obsidian-icon-folder",
-  "make-md"
+  "make-md",
+  "auto-card-link",
+  "obsidian-link-embed"
 ]

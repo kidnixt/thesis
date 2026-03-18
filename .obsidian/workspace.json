@@ -11,12 +11,14 @@
             "id": "623941b71fb45f85",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "images"
+                "file": "ESM-3/TUTORIAL.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "images"
+              "title": "TUTORIAL"
             }
           }
         ]
@@ -195,11 +197,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "35c659a16fbdf9c6",
+  "active": "623941b71fb45f85",
   "lastOpenFiles": [
+    "ESM-3/ESM-3.md",
     "images/images.md",
     "images",
-    "ESM-3/ESM-3.md",
     "SAPROT/SAPROT.md",
     "ESM-3/TUTORIAL.md",
     "SAPROT/TUTORIAL.md",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SAPROT/PAPERS.md",
+                "file": "SAPROT/LINKS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PAPERS"
+              "title": "LINKS"
             }
           }
         ]
@@ -199,8 +199,8 @@
   },
   "active": "a744d4ac013f1e84",
   "lastOpenFiles": [
-    "SAPROT/LINKS.md",
     "SAPROT/PAPERS.md",
+    "SAPROT/LINKS.md",
     "SAPROT/TUTORIAL.md",
     "SAPROT/SAPROT.md",
     "images/images.md",

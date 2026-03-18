@@ -2,22 +2,15 @@
 tags:
   - LINKS
 ---
-
-```cardlink
-url: https://www.ailurus.bio/post/saprot-lowering-the-barrier-for-ai-driven-protein-engineering
+```embed
 title: "Saprot: Lowering the Barrier for AI-Driven Protein Engineering"
+image: "https://cdn.prod.website-files.com/6683848258ef43f031edf22c/6683848258ef43f031edf25f_Ailurus%20logo-100.png"
 description: "Saprot: Lowering the Barrier for AI-Driven Protein Engineering: Saprot democratizes protein AI with a structure-aware model and no-code tools, enabling widespread biological innovation."
-host: www.ailurus.bio
+url: "https://www.ailurus.bio/post/saprot-lowering-the-barrier-for-ai-driven-protein-engineering"
+favicon: ""
+aspectRatio: "26.666666666666668"
 ```
 
-
-```cardlink
-url: https://www.themoonlight.io/en/review/biorxiv/saprothub-making-protein-modeling-accessible-to-all-biologists
-title: "[Literature Review] SaprotHub: Making Protein Modeling Accessible to All Biologists"
-description: "The paper introduces SaprotHub, a platform designed to make protein modeling accessible to researchers without specialized machine learning expertise. SaprotHub centers around Saprot, a novel protein language model (PLM) that uses a structure-aware (SA) alphabet, where each \"letter\" encodes both amino acid type and local protein geometry, enabling the model to capture both primary and tertiary structures. The SA alphabet is defined as $SAA = V \\times F$, where $V$ denotes the 20 amino acids, and $F$ represents the 20 structural tokens derived from protein 3D structures through Foldseek discretization.Saprot employs a bidirectional Transformer architecture and is pre-trained to reconstruct masked tokens in SA sequences. The model is trained from scratch on 40 million protein SA sequences and is available in three sizes: 35M, 650M, and 1.3B parameters. Post-training, Saprot demonstrates versatility across various protein prediction tasks, including supervised training, zero-shot mutation effect prediction, and protein sequence design.The platform includes ColabSaprot, a Google Colaboratory-based interface for easy fine-tuning and inference of Saprot using adapter learning techniques. ColabSaprot streamlines model training and inference, allowing researchers to create task-specific PLMs without advanced ML or coding skills. Adapter networks, containing around 1% of the parameters of the whole Saprot model, are used for parameter-efficient fine-tuning.SaprotHub provides a centralized community model repository for saving, sharing, searching, and collaborating on fine-tuned Saprot models. The platform supports model storage, sharing, continuous learning, and multiple model aggregation to enhance predictive performance. Biologists can share their trained models on SaprotHub while maintaining the privacy of their datasets. Researchers can leverage shared models for further continuous training, which is beneficial in limited-data scenarios. A model aggregation mechanism in ColabSaprot enables users to integrate multiple existing models for improved performance.The authors conducted wet lab validations to demonstrate the usefulness of Saprot and SaprotHub. For example, ColabSaprot was used for zero-shot single-point mutation prediction on a xylanase from *Mycothermus thermophilus*, and experimental validation showed enhanced enzyme activity in 13 out of 20 predicted variants.A user study involving 12 biology researchers (without an ML background) showed that ColabSaprot and SaprotHub enabled them to train and use state-of-the-art PLMs with performance comparable to that of an AI expert. In some scenarios, biologists leveraging pre-existing models from SaprotHub achieved higher prediction accuracy than AI experts.The Open Protein Modeling Consortium (OPMC) is introduced as a unified repository for decentralized protein language models, fostering collaborative construction and continuous improvement of PLMs. SaprotHub is the first PLM Hub to join OPMC. The authors have made both Saprot and ColabSaprot open-source. OPMC members are currently expanding the ecosystem by integrating other PLMs, such as ProTrek, ESM-2 & ESMC, ProtTrans, and METL, into the OPMC framework."
-host: www.themoonlight.io
-image: https://moonlight-paper-snapshot.s3.ap-northeast-2.amazonaws.com/arxiv/saprothub-making-protein-modeling-accessible-to-all-biologists-2.png
-```
 
 ```embed
 title: "[Literature Review] SaprotHub: Making Protein Modeling Accessible to All Biologists"

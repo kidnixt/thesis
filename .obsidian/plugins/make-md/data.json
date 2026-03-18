@@ -39,8 +39,7 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//Tags",
-    "//Tags/Tags/SAPROT"
+    "//Tags"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

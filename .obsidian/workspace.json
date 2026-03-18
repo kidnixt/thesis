@@ -11,14 +11,10 @@
             "id": "623941b71fb45f85",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tags/SAPROT/TUTORIAL.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "TUTORIAL"
+              "title": "New tab"
             }
           }
         ]
@@ -197,13 +193,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "623941b71fb45f85",
+  "active": "35c659a16fbdf9c6",
   "lastOpenFiles": [
-    "Tags/SAPROT/TUTORIAL.md",
-    "Tags/SAPROT/SAPROT.md",
+    "ESM-3/ESM-3.md",
+    "ESM-3",
+    "Tags/Tags.md",
+    "SAPROT/TUTORIAL.md",
+    "Untitled.md",
+    "SAPROT/SAPROT.md",
     "README.md",
-    "Tags/SAPROT",
-    "Tags",
-    "Untitled.md"
+    "SAPROT",
+    "Tags"
   ]
 }

@@ -41,7 +41,9 @@
     "/",
     "//Tags",
     "//ESM-3",
-    "//images"
+    "//images",
+    "//BIO",
+    "//BIO/BIO/FUNDAMENTOS"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

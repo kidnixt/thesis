@@ -1,0 +1,1 @@
+Capacidad de una proteína para disolverse en un solvente, generalmente agua.

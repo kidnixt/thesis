@@ -1,0 +1,1 @@
+Capacidad de una enzima para catalizar una reacción química.

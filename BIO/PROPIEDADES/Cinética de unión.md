@@ -1,0 +1,1 @@
+Velocidad a la que ocurre la unión y disociación entre moléculas.

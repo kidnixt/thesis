@@ -44,8 +44,8 @@
     "//BIO",
     "//BIO/BIO/FUNDAMENTOS",
     "/",
-    "//BIO/BIO/FUNCIÓN",
-    "//SAPROT"
+    "//SAPROT",
+    "//BIO/BIO/PROPIEDADES"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

@@ -1,0 +1,1 @@
+Fuerza con la que una proteína se une a otra molécula (ligando, otra proteína, etc.).

@@ -1,0 +1,1 @@
+Capacidad de una proteína para mantener su estructura bajo distintas condiciones.

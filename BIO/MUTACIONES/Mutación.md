@@ -1,0 +1,1 @@
+Cambio en la secuencia de una proteína o en el ADN que la codifica.

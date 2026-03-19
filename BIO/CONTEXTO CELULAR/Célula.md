@@ -1,0 +1,1 @@
+Unidad básica de los seres vivos donde ocurren todos los procesos biológicos, incluyendo la función de las proteínas.

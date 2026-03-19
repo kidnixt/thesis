@@ -1,0 +1,1 @@
+Versiones diferentes de una misma proteína que presentan cambios en su secuencia.

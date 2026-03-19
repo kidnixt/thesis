@@ -1,0 +1,1 @@
+Modelo computacional entrenado sobre secuencias de proteínas para aprender patrones y propiedades biológicas.

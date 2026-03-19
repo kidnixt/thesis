@@ -1,0 +1,1 @@
+Medida de qué tan bien una variante contribuye a la supervivencia o reproducción en un contexto biológico.

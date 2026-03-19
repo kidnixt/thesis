@@ -41,10 +41,12 @@
     "//Tags",
     "//ESM-3",
     "//images",
-    "//BIO",
     "/",
     "//SAPROT",
-    "//BIO/BIO/INTERACCIONES"
+    "//BIO/BIO/CONTEXTO CELULAR",
+    "//BIO/BIO/CONCEPTOS AVANZADOS",
+    "//BIO",
+    "//BIO/BIO/PROPIEDADES"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

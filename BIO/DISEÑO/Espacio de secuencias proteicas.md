@@ -1,0 +1,1 @@
+Conjunto de todas las posibles secuencias de proteínas.

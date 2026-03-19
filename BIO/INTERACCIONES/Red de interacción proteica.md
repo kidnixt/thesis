@@ -1,0 +1,1 @@
+Conjunto de todas las interacciones entre proteínas en un sistema biológico.

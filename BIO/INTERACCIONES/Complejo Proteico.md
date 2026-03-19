@@ -1,0 +1,1 @@
+Estructura formada por múltiples proteínas que interactúan entre sí.

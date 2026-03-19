@@ -1,0 +1,1 @@
+Proceso mediante el cual dos o más proteínas se unen para realizar una función.

@@ -1,0 +1,1 @@
+Actividad biológica que realiza una proteína, como catalizar reacciones, transportar moléculas o participar en señalización.

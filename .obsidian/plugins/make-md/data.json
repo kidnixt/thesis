@@ -38,12 +38,14 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/",
     "//Tags",
     "//ESM-3",
     "//images",
     "//BIO",
-    "//BIO/BIO/FUNDAMENTOS"
+    "//BIO/BIO/FUNDAMENTOS",
+    "/",
+    "//BIO/BIO/FUNCIÓN",
+    "//SAPROT"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

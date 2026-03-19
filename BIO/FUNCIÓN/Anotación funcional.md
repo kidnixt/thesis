@@ -1,0 +1,1 @@
+Proceso de asignar información funcional a una proteína, como su actividad, localización o interacciones.

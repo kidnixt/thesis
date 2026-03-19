@@ -1,0 +1,1 @@
+Unidad estructural y funcional dentro de una proteína que puede plegarse de forma independiente.

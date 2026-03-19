@@ -1,0 +1,1 @@
+Patrón corto y recurrente en la secuencia o estructura de proteínas asociado a una función específica.

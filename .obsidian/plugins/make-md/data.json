@@ -42,10 +42,9 @@
     "//ESM-3",
     "//images",
     "//BIO",
-    "//BIO/BIO/FUNDAMENTOS",
     "/",
     "//SAPROT",
-    "//BIO/BIO/PROPIEDADES"
+    "//BIO/BIO/INTERACCIONES"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

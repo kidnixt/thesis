@@ -75,16 +75,13 @@
             }
           },
           {
-            "id": "35c659a16fbdf9c6",
+            "id": "1859cfc8de42fafd",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -201,6 +198,7 @@
   },
   "active": "a744d4ac013f1e84",
   "lastOpenFiles": [
+    "Tags",
     "SAPROT/LINKS.md",
     "SAPROT/PAPERS.md",
     "SAPROT/TUTORIAL.md",
@@ -213,7 +211,6 @@
     "Tags/Tags.md",
     "Untitled.md",
     "README.md",
-    "SAPROT",
-    "Tags"
+    "SAPROT"
   ]
 }

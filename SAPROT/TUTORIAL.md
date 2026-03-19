@@ -25,4 +25,4 @@ Este tipo de tarea toma una proteína completa y devuelve una categoría. En ese
 
 Se usa para responder preguntas como: qué hace una proteína, dónde se encuentra en la célula, a qué familia pertenece o si tiene ciertas propiedades (como ser soluble, tóxica o antigénica). También puede clasificar aspectos más finos como dominios, motivos o tipos de interacción. 
 
-La idea clave es q
+La idea clave es que el modelo analiza la proteína como un todo y la ubica dentro de categorías aprendidadas previamente. Puede ser útil cuando tenés proteínas nuevas o poco caracterizadas y querés una primera interpretación funcional. 

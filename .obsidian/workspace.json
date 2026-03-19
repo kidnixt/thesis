@@ -221,8 +221,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "894ab05d7e97e532",
+  "active": "1859cfc8de42fafd",
   "lastOpenFiles": [
+    "BIO/CONCEPTOS AVANZADOS/Embedding de proteínas.md",
+    "BIO/CONCEPTOS AVANZADOS/Zero-shot prediction.md",
+    "BIO/CONCEPTOS AVANZADOS/Inverse folding.md",
     "BIO/DISEÑO/Espacio de secuencias proteicas.md",
     "Espacio de secuencias proteicas.md",
     "BIO/CONCEPTOS AVANZADOS/Espacio de proteínas.md",
@@ -251,9 +254,6 @@
     "BIO/PROPIEDADES/PROPIEDADES.md",
     "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
     "BIO/PROPIEDADES/Nivel de expresión génica.md",
-    "BIO/PROPIEDADES/Actividad enzimática.md",
-    "BIO/PROPIEDADES/Cinética de unión.md",
-    "BIO/PROPIEDADES/Afinidad de unión.md",
     "BIO/PROPIEDADES",
     "BIO/FUNCIÓN",
     "BIO/FUNDAMENTOS",

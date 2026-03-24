@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "8872f82d30cf2cf4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,10 +105,13 @@
             "id": "25973755a9c92319",
             "type": "leaf",
             "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
         ],
@@ -211,7 +226,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1643d5decc545cbf",
+  "active": "8872f82d30cf2cf4",
   "lastOpenFiles": [
     "SAPROT/TUTORIAL.md",
     "SAPROT/LINKS.md",

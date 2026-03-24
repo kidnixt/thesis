@@ -27,28 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "SAPROT/LINKS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "8872f82d30cf2cf4",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.7"
+              "title": "LINKS"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,16 +90,13 @@
             }
           },
           {
-            "id": "25973755a9c92319",
+            "id": "4b59aa9f5607219b",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -226,9 +211,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8872f82d30cf2cf4",
+  "active": "1643d5decc545cbf",
   "lastOpenFiles": [
+    "SAPROT/PAPERS.md",
     "SAPROT/TUTORIAL.md",
+    "README.md",
+    "Tags",
     "SAPROT/LINKS.md",
     "BIO/CONCEPTOS AVANZADOS/Embedding de proteínas.md",
     "BIO/FUNDAMENTOS/Secuencia de aminoácidos.md",
@@ -255,14 +243,11 @@
     "BIO/DISEÑO/DISEÑO.md",
     "BIO/MUTACIONES/Variantes proteicas.md",
     "BIO/DISEÑO",
-    "BIO/MUTACIONES/Fitness Biológico.md",
-    "BIO/MUTACIONES/Efecto de mutaciones.md",
     "BIO/MUTACIONES",
     "BIO/INTERACCIONES",
     "BIO/PROPIEDADES",
     "BIO/FUNCIÓN",
     "BIO/FUNDAMENTOS",
-    "BIO",
-    "Tags"
+    "BIO"
   ]
 }

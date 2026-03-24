@@ -9,11 +9,11 @@ tags:
 
 ```embed
 title: "SaprotHub/tutorial.md at main · westlake-repl/SaprotHub"
-image: "https://opengraph.githubassets.com/07454ea73bc5ee01ed636d6224c726782492888c37e09fcada3e22ae4dbcfbd5/westlake-repl/SaprotHub"
+image: "https://github.com/westlake-repl/SaProtHub/raw/main/Figure/SA_Sequence.png?raw=true"
 description: "Making Protein Language Modeling Accessible to All Biologists - westlake-repl/SaprotHub"
 url: "https://github.com/westlake-repl/SaprotHub/blob/main/tutorial.md"
 favicon: ""
-aspectRatio: "50"
+aspectRatio: "44.13075780089153"
 ```
 
 ## SaProtHub — Tipos de tareas y qué significan realmente

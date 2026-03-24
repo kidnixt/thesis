@@ -38,14 +38,14 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "//Tags",
     "//ESM-3",
-    "//images",
     "/",
     "//SAPROT",
     "//BIO/BIO/CONTEXTO CELULAR",
     "//BIO/BIO/CONCEPTOS AVANZADOS",
-    "//BIO/BIO/PROPIEDADES"
+    "//BIO/BIO/PROPIEDADES",
+    "//Tags",
+    "//images"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

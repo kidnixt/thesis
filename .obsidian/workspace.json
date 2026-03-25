@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
+                "file": "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plegamiento de proteínas"
+              "title": "Explicabilidad SaProt (not by me)"
             }
           }
         ]
@@ -196,22 +196,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b3712e1dafda547f",
+  "active": "a744d4ac013f1e84",
   "lastOpenFiles": [
+    "SAPROT/ANÁLISIS/Score LLR.md",
+    "LLM/Log-Likelihood Ratio.md",
     "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",
     "TECNICAS/SHAP.md",
     "TECNICAS/Saliency Maps.md",
+    "TECNICAS/XAI.md",
+    "README.md",
+    "BIO/CONCEPTOS AVANZADOS/Embedding de proteínas.md",
+    "LLM/Transformer.md",
+    "BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas.md",
+    "BIO/MUTACIONES/Efecto de mutaciones.md",
+    "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
+    "LLM/Saliency Maps.md",
+    "LLM/SHAP.md",
+    "BIO/MUTACIONES/Wild-type.md",
+    "LLM/Foldseek.md",
+    "LLM/3Di.md",
     "TECNICAS/TECNICAS.md",
     "TECNICAS",
-    "LLM/SHAP.md",
-    "LLM/Saliency Maps.md",
-    "LLM/Log-Likelihood Ratio.md",
     "LLM/Masked Language Model.md",
     "LLM/LLM.md",
     "LLM",
     "Tags/Tags.md",
     "Tags",
-    "SAPROT/ANÁLISIS/Score LLR.md",
     "SAPROT/ANÁLISIS/ANÁLISIS.md",
     "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
     "SAPROT/ANÁLISIS",
@@ -219,18 +229,8 @@
     "Attachments/Pasted image 20260325160307.png",
     "Attachments/Pasted image 20260325160247.png",
     "Attachments",
-    "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
     "images/images.md",
     "image2.md",
-    "SAPROT/TUTORIAL.md",
-    "SAPROT/PAPERS.md",
-    "SAPROT/LINKS.md",
-    "BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas.md",
-    "BIO/CONTEXTO CELULAR/Célula.md",
-    "BIO/FUNCIÓN/Anotación funcional.md",
-    "BIO/PROPIEDADES/Cinética de unión.md",
-    "BIO/PROPIEDADES/Afinidad de unión.md",
-    "BIO/INTERACCIONES/Red de interacción proteica.md",
     "BIO/CONCEPTOS AVANZADOS",
     "BIO/CONTEXTO CELULAR",
     "BIO/DISEÑO",

@@ -41,3 +41,5 @@ $$P_{rel} = e^{LLR}$$
 
 - [[Masked Language Model]]
 - Aplicación en bioinformática: [[Modelo de lenguaje de proteínas]]
+- Uso específico en SaProt: [[Score de Mutación SaProt]]
+- Relacionado con: [[Zero-shot prediction]]

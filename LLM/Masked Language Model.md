@@ -21,7 +21,7 @@ Un **Masked Language Model** (MLM) es una arquitectura de modelo de lenguaje don
 
 ## Intuición
 
-MLM aprende representaciones bidireccionales del lenguaje. A diferencia de GPT que solo "mira hacia atrás", MLM puede usar información de ambos lados para entender el contexto completo.
+MLM aprende representaciones bidireccionales del lenguaje (embeddings). A diferencia de GPT que solo "mira hacia atrás", MLM puede usar información de ambos lados para entender el contexto completo.
 
 ## Ejemplos de modelos MLM
 

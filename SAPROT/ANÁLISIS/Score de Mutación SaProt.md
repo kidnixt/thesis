@@ -4,7 +4,7 @@
 
 SaProt predice efectos mutacionales usando el **log odds ratio en la posición mutada**, propuesto originalmente por Meier et al. (2021).
 
-**Interpretación:** Un score positivo significa que la mutación es mejor que el wild type desde la perspectiva evolutiva (mayor es mejor).
+**Interpretación:** Un score positivo significa que la mutación es mejor que el [[Wild-type|wild type]] desde la perspectiva evolutiva (mayor es mejor).
 
 ## Fórmula original (Meier et al., 2021)
 
@@ -26,7 +26,7 @@ $$\sum_{t \in T} \left[\log \sum_{f \in F} P(x_t = s_t^{mt}f \mid x_{\backslash 
 
 Donde:
 - $V$ = alfabeto de residuos (20 aminoácidos)
-- $F$ = alfabeto 3Di de Foldseek (tokens estructurales)
+- $F$ = alfabeto [[3Di]] de [[Foldseek]] (tokens estructurales)
 - $V \times F$ = producto cartesiano (vocabulario structure-aware)
 - $s_t f \in V \times F$ = token structure-aware en el vocabulario de SaProt
 
@@ -50,3 +50,6 @@ Donde:
 - [[Log-Likelihood Ratio]] - Concepto general de LLR
 - [[Score LLR]] - Análisis de magnitudes
 - [[Masked Language Model]] - Arquitectura base
+- [[3Di]] - Alfabeto estructural
+- [[Foldseek]] - Herramienta de tokenización estructural
+- [[Wild-type]] - Secuencia de referencia

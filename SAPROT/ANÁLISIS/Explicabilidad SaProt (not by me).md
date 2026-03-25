@@ -4,7 +4,7 @@
 El documento utiliza el [[Score de Mutación SaProt|score de mutación]] como métrica principal. Técnicamente, esto no es una medida de "salud", sino una medida de **sorpresa del modelo**.
 
 - **Fundamento:** SaProt, al ser un modelo de **masked language modeling (MLM)** (similar a BERT/ESM, no autorregresivo), estima una distribución de probabilidad sobre un vocabulario de tokens. El score reportado es un **[[Log-Likelihood Ratio]] (LLR)**.
-- **Justificación:** Se realiza este cálculo para medir qué tan desplazada queda la distribución de probabilidad cuando se fuerza un token específico (mutante) en una posición dada, comparado con el token original (WT).
+- **Justificación:** Se realiza este cálculo para medir qué tan desplazada queda la distribución de probabilidad cuando se fuerza un token específico (mutante) en una posición dada, comparado con el token original ([[Wild-type|WT]]).
 - **Incoherencia Estadística:** El informe clasifica como "menos favorables" a **D314A (-1.30)** y **S126R (-7.33)**. Desde la teoría de la información, esto es un error de interpretación de magnitudes. Siendo una escala logarítmica, la densidad de probabilidad de S126R es órdenes de magnitud menor. Etiquetarlos bajo la misma categoría ignora la distribución de los datos; -1.30 suele estar dentro del ruido de fondo o de la varianza normal del modelo, mientras que -7.33 es un _outlier_ estadístico claro.
 
 
@@ -33,8 +33,8 @@ Para explicar qué son los **[[Saliency Maps]]** sin vueltas: es básicamente ve
 
 El informe menciona que los [[Embedding de proteínas|embeddings]] de 480 dimensiones capturan secuencia y estructura.
 
-- **Justificación:** SaProt no usa tokens de aminoácidos puros, sino **FoldTokens**. Esto significa que el espacio latente está pre-condicionado por un algoritmo de discretización estructural (3Di).
-- **Implicancia:** Los vectores resultantes no viven en un espacio semántico de "letras", sino en un espacio de **formas locales**. Por eso, el modelo puede "predecir" estabilidad sin ejecutar una simulación física; simplemente detecta si el token estructural "encaja" en el contexto de los tokens vecinos.
+- **Justificación:** SaProt no usa tokens de aminoácidos puros, sino **FoldTokens**. Esto significa que el espacio latente está pre-condicionado por un algoritmo de discretización estructural ([[3Di]]).
+- **Implicancia:** Los vectores resultantes no viven en un espacio semántico de "letras", sino en un espacio de **formas locales**. Por eso, el modelo puede "predecir" estabilidad sin ejecutar una simulación física; simplemente detecta si el token estructural "encaja" en el contexto de los tokens vecinos. Ver [[Foldseek]] para más detalles.
     
 
 ### 6. [[SHAP]]: Descomposición de Contribuciones

@@ -31,6 +31,6 @@ Ver [[Efecto de mutaciones]] para más detalles.
 
 ## En modelos computacionales
 
-Los [[Modelo de lenguaje de proteínas]] pueden predecir estabilidad sin necesidad de experimentos. SaProt usa esta capacidad en tareas de **regresión** y **predicción de efecto de mutaciones**.
+Los [[Modelo de lenguaje de proteínas]] pueden predecir estabilidad sin necesidad de experimentos. SaProt usa esta capacidad en tareas de **regresión** y **predicción de efecto de mutaciones** mediante el [[Score de Mutación SaProt]].
 
 Ver [[SAPROT/TUTORIAL|Tutorial de SaProt]] — secciones de **Regresión** y **Zero-shot: efecto de mutaciones**.

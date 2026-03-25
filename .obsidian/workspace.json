@@ -196,8 +196,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a744d4ac013f1e84",
+  "active": "b3712e1dafda547f",
   "lastOpenFiles": [
+    "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",
+    "TECNICAS/SHAP.md",
+    "TECNICAS/Saliency Maps.md",
+    "TECNICAS/TECNICAS.md",
+    "TECNICAS",
     "LLM/SHAP.md",
     "LLM/Saliency Maps.md",
     "LLM/Log-Likelihood Ratio.md",
@@ -226,15 +231,10 @@
     "BIO/PROPIEDADES/Cinética de unión.md",
     "BIO/PROPIEDADES/Afinidad de unión.md",
     "BIO/INTERACCIONES/Red de interacción proteica.md",
-    "README.md",
-    "BIO/CONCEPTOS AVANZADOS/Embedding de proteínas.md",
-    "BIO/FUNDAMENTOS/Secuencia de aminoácidos.md",
-    "BIO/FUNCIÓN/Familia de proteínas.md",
     "BIO/CONCEPTOS AVANZADOS",
     "BIO/CONTEXTO CELULAR",
     "BIO/DISEÑO",
     "BIO/MUTACIONES",
-    "BIO/INTERACCIONES",
-    "BIO/PROPIEDADES"
+    "BIO/INTERACCIONES"
   ]
 }

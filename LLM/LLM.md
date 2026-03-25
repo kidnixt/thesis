@@ -1,24 +1,18 @@
 # LLM - Modelos de Lenguaje
 
-Esta carpeta contiene conceptos fundamentales de Modelos de Lenguaje (Language Models) aplicados a proteínas y bioinformática.
+Esta carpeta contiene conceptos fundamentales de Modelos de Lenguaje (Language Models).
 
 ## Conceptos
 
-- [[Masked Language Model]] - Arquitectura base de modelos como ESM y SaProt
-- [[Log-Likelihood Ratio]] - Métrica principal para evaluar efecto de mutaciones
-- [[Saliency Maps]] - Técnica de explicabilidad basada en gradientes
-- [[SHAP]] - Método de atribución basado en valores de Shapley
+- [[Masked Language Model]] - Arquitectura bidireccional tipo BERT
+- [[Log-Likelihood Ratio]] - Métrica para comparar probabilidades
 
-## Relación con modelos de proteínas
+## Técnicas relacionadas
 
-Los [[Modelo de lenguaje de proteínas|modelos de lenguaje de proteínas]] (pLMs) como [[SAPROT]] y ESM utilizan estas técnicas para:
+Ver carpeta [[TECNICAS]] para métodos de explicabilidad:
+- [[Saliency Maps]]
+- [[SHAP]]
 
-1. **Predicción de mutaciones**: Usando [[Log-Likelihood Ratio|LLR]] para evaluar el efecto de variantes
-2. **Explicabilidad**: Usando [[Saliency Maps]] y [[SHAP]] para entender qué residuos son importantes
-3. **Embeddings**: Generando representaciones vectoriales ([[Embedding de proteínas|embeddings]]) de secuencias
+## Aplicación en bioinformática
 
-## Ver también
-
-- [[Embedding de proteínas]]
-- [[Zero-shot prediction]]
-- [[Efecto de mutaciones]]
+Ver [[Modelo de lenguaje de proteínas]] para la aplicación de estos conceptos en proteínas.

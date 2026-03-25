@@ -2,55 +2,42 @@
 
 ## Definición
 
-El **Log-Likelihood Ratio** (LLR) es una métrica que mide la diferencia logarítmica entre la probabilidad de una variante (mutante) y la probabilidad del aminoácido original (wild-type) en una posición específica.
+El **Log-Likelihood Ratio** (LLR) es una métrica estadística que mide la diferencia logarítmica entre dos probabilidades. Se usa para comparar qué tan probable es una observación bajo dos hipótesis diferentes.
 
-## Fórmula
+## Intuición
 
-$$LLR = \log\left(\frac{P(\text{mutante})}{P(\text{wild-type})}\right) = \log(P_{mut}) - \log(P_{wt})$$
+Si tienes dos opciones (A y B) y quieres saber cuál es más probable según un modelo, el LLR te dice: "¿cuántas veces más probable es A que B?", expresado en escala logarítmica.
+
+## Fórmula general
+
+$$LLR = \log\left(\frac{P(A)}{P(B)}\right) = \log(P_A) - \log(P_B)$$
 
 ## Interpretación
 
-| Valor LLR | Probabilidad relativa | Interpretación biológica |
-|-----------|----------------------|--------------------------|
-| 0 | 100% (igual que WT) | Mutación neutra |
-| -1.30 | ~27% del WT | Levemente desfavorable |
-| -2.0 | ~13.5% del WT | Desfavorable |
-| -7.33 | ~0.06% del WT | Severamente deletérea |
-| +1.0 | ~270% del WT | Potencialmente favorable |
+| Valor LLR | Significado |
+|-----------|-------------|
+| 0 | Ambas opciones igualmente probables |
+| > 0 | A es más probable que B |
+| < 0 | B es más probable que A |
 
-## Cálculo de probabilidad relativa
+## Escala logarítmica
 
-Si el LLR está en base natural (ln):
+El LLR está en escala logarítmica (usualmente base $e$). Para convertir a probabilidad relativa:
 
 $$P_{rel} = e^{LLR}$$
 
 **Ejemplos:**
-- $e^{-1.30} \approx 0.27$ (27% tan probable como WT)
-- $e^{-7.33} \approx 0.0006$ (0.06% tan probable como WT)
+- LLR = 0 → $e^0 = 1$ (igual probabilidad)
+- LLR = -1 → $e^{-1} \approx 0.37$ (A es 37% tan probable como B)
+- LLR = -3 → $e^{-3} \approx 0.05$ (A es 5% tan probable como B)
 
-## Rango dinámico
+## Ventajas de usar logaritmos
 
-Según la literatura (Meier et al., 2021):
-
-- **LLR entre 0 y -2**: Generalmente dentro del "ruido" del modelo; variantes posiblemente neutrales
-- **LLR < -4**: Mutaciones con alta probabilidad de ser deletéreas
-- **LLR < -7**: Estadísticamente "inexistentes" en el espacio latente del modelo
-
-## Aplicación en SaProt
-
-[[SAPROT]] modifica ligeramente la fórmula para adaptarse a su vocabulario que incluye tokens estructurales (3Di). La probabilidad asignada a cada residuo es la suma de las probabilidades de todos los tokens que contienen ese aminoácido.
-
-## Relación con fitness biológico
-
-Un LLR negativo indica que la mutación es "poco probable" según los datos evolutivos y estructurales del entrenamiento. Se ha demostrado correlación entre LLR negativo y:
-
-- Reducción de [[Estabilidad proteica]]
-- Pérdida de [[Función de proteínas|función]]
-- [[Efecto de mutaciones|Efectos deletéreos]]
+1. Convierte multiplicaciones en sumas (más estable numéricamente)
+2. Evita underflow con probabilidades muy pequeñas
+3. Interpretación aditiva: LLR(A/C) = LLR(A/B) + LLR(B/C)
 
 ## Ver también
 
 - [[Masked Language Model]]
-- [[Mutación]]
-- [[Efecto de mutaciones]]
-- [[Score LLR]] (análisis específico en SAPROT/ANÁLISIS)
+- Aplicación en bioinformática: [[Modelo de lenguaje de proteínas]]

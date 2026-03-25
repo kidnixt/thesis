@@ -1,7 +1,7 @@
 
 ### 1. Cuantificación del Espacio de Salida: El Log-Likelihood Ratio (LLR)
 
-El documento utiliza el score de mutación como métrica principal. Técnicamente, esto no es una medida de "salud", sino una medida de **sorpresa del modelo**.
+El documento utiliza el [[Score de Mutación SaProt|score de mutación]] como métrica principal. Técnicamente, esto no es una medida de "salud", sino una medida de **sorpresa del modelo**.
 
 - **Fundamento:** SaProt, al ser un modelo de **masked language modeling (MLM)** (similar a BERT/ESM, no autorregresivo), estima una distribución de probabilidad sobre un vocabulario de tokens. El score reportado es un **[[Log-Likelihood Ratio]] (LLR)**.
 - **Justificación:** Se realiza este cálculo para medir qué tan desplazada queda la distribución de probabilidad cuando se fuerza un token específico (mutante) en una posición dada, comparado con el token original (WT).

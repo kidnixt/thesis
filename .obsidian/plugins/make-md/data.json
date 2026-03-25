@@ -44,7 +44,6 @@
     "//BIO/BIO/PROPIEDADES",
     "//Tags",
     "//images",
-    "//Attachments",
     "//SAPROT",
     "//SAPROT/SAPROT/ANÁLISIS"
   ],
@@ -58,6 +57,8 @@
     "_assets",
     "_blocks"
   ],
+  "newFileLocation": "root",
+  "newFileFolderPath": "",
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,

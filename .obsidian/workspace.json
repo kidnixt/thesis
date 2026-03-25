@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SAPROT/TUTORIAL.md",
+                "file": "BITACORA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TUTORIAL"
+              "title": "BITACORA"
             }
           }
         ],
@@ -213,12 +213,20 @@
   },
   "active": "1643d5decc545cbf",
   "lastOpenFiles": [
+    "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
+    "images/images.md",
+    "BITACORA.md",
+    "Attachments/Pasted image 20260325160307.png",
+    "Attachments/Pasted image 20260325160247.png",
+    "Attachments",
+    "image2.md",
+    "SAPROT/TUTORIAL.md",
+    "Tags/Tags.md",
     "SAPROT/PAPERS.md",
     "SAPROT/LINKS.md",
     "BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas.md",
     "BIO/CONTEXTO CELULAR/Célula.md",
     "BIO/FUNCIÓN/Anotación funcional.md",
-    "SAPROT/TUTORIAL.md",
     "BIO/PROPIEDADES/Cinética de unión.md",
     "BIO/PROPIEDADES/Afinidad de unión.md",
     "BIO/INTERACCIONES/Red de interacción proteica.md",
@@ -227,7 +235,6 @@
     "BIO/CONCEPTOS AVANZADOS/Embedding de proteínas.md",
     "BIO/FUNDAMENTOS/Secuencia de aminoácidos.md",
     "BIO/FUNCIÓN/Familia de proteínas.md",
-    "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
     "ESM-3/TUTORIAL.md",
     "BIO/PROPIEDADES/Estabilidad proteica.md",
     "BIO/CONCEPTOS AVANZADOS/Zero-shot prediction.md",
@@ -236,18 +243,13 @@
     "BIO/PROPIEDADES/Solubilidad de proteínas.md",
     "BIO/DISEÑO/Espacio de secuencias proteicas.md",
     "Espacio de secuencias proteicas.md",
-    "BIO/CONCEPTOS AVANZADOS/CONCEPTOS AVANZADOS.md",
     "BIO/CONCEPTOS AVANZADOS",
-    "BIO/CONTEXTO CELULAR/CONTEXTO CELULAR.md",
     "BIO/CONTEXTO CELULAR",
-    "BIO/DISEÑO/Ingeniería de proteínas.md",
-    "BIO/DISEÑO/Diseño de proteínas.md",
     "BIO/DISEÑO",
     "BIO/MUTACIONES",
     "BIO/INTERACCIONES",
     "BIO/PROPIEDADES",
     "BIO/FUNCIÓN",
-    "BIO/FUNDAMENTOS",
-    "BIO"
+    "BIO/FUNDAMENTOS"
   ]
 }

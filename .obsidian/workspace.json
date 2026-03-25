@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BITACORA.md",
+                "file": "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BITACORA"
+              "title": "Explicabilidad SaProt (not by me)"
             }
           }
         ],
@@ -213,9 +213,13 @@
   },
   "active": "1643d5decc545cbf",
   "lastOpenFiles": [
+    "SAPROT/ANÁLISIS/Score LLR.md",
+    "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
+    "SAPROT/ANÁLISIS/ANÁLISIS.md",
+    "BITACORA.md",
+    "SAPROT/ANÁLISIS",
     "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
     "images/images.md",
-    "BITACORA.md",
     "Attachments/Pasted image 20260325160307.png",
     "Attachments/Pasted image 20260325160247.png",
     "Attachments",
@@ -240,16 +244,12 @@
     "BIO/CONCEPTOS AVANZADOS/Zero-shot prediction.md",
     "BIO/CONCEPTOS AVANZADOS/Inverse folding.md",
     "BIO/CONCEPTOS AVANZADOS/Espacio de proteínas.md",
-    "BIO/PROPIEDADES/Solubilidad de proteínas.md",
-    "BIO/DISEÑO/Espacio de secuencias proteicas.md",
-    "Espacio de secuencias proteicas.md",
     "BIO/CONCEPTOS AVANZADOS",
     "BIO/CONTEXTO CELULAR",
     "BIO/DISEÑO",
     "BIO/MUTACIONES",
     "BIO/INTERACCIONES",
     "BIO/PROPIEDADES",
-    "BIO/FUNCIÓN",
-    "BIO/FUNDAMENTOS"
+    "BIO/FUNCIÓN"
   ]
 }

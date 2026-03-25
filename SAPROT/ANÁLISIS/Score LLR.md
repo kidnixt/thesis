@@ -1,6 +1,6 @@
-### 1. La métrica LLR y el rango dinámico
+### 1. La métrica [[Log-Likelihood Ratio|LLR]] y el rango dinámico
 
-En el paper original de **SaProt (Su et al., 2024)** y en su predecesor **ESM-1v (Meier et al., 2021)**, el _score_ es un **Log-Likelihood Ratio (LLR)**.
+En el paper original de **[[SAPROT|SaProt]]** (Su et al., 2024) y en su predecesor **ESM-1v (Meier et al., 2021)**, el _score_ es un **[[Log-Likelihood Ratio]] (LLR)**.
 
 - **Referencia:** _Meier, J., et al. (2021). "Language models enable zero-shot prediction of the effects of mutations on protein function"._
 - **Justificación:** En este estudio, se observa que las mutaciones con scores LLR cercanos a 0 (entre 0 y -2) suelen solaparse con variantes que en experimentos biológicos resultan ser **benignas o neutrales**. El "ruido" al que me refería es la **varianza de predicción**: el modelo puede asignar pequeñas penalizaciones por cuestiones de entrenamiento del corpus, pero que no representan un cambio estructural real.

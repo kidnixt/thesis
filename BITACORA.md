@@ -31,18 +31,18 @@ Como resultado esperado, se busca establecer una interpretación clara de los ou
 
 Se ha reorganizado el vault de Obsidian para mejorar la trazabilidad de la investigación. Tras la revisión de la documentación oficial de SaProt, se definió un plan de acción orientado a desglosar los fundamentos de los Modelos de Lenguaje (LMs) y las particularidades arquitectónicas de SaProt.
 
-* **Entender qué es realmente un “score”.** El objetivo es profundizar en la interpretación estadística de las salidas del modelo, específicamente en las métricas de Log-Likelihood(LL).  
-  * **Definición** de LL en el contexto de pLMs y la interpretación biológica de valores altos vs. bajos.  
-  * **Variantes de Scoring en Mutaciones:**   
+* **Entender qué es realmente un “score”.** El objetivo es profundizar en la interpretación estadística de las salidas del modelo, específicamente en las métricas de [[Log-Likelihood Ratio|Log-Likelihood (LL)]].
+  * **Definición** de LL en el contexto de [[Modelo de lenguaje de proteínas|pLMs]] y la interpretación biológica de valores altos vs. bajos.
+  * **Variantes de Scoring en [[Mutación|Mutaciones]]:**   
     * Log-Likelihood de una secuencia completa.  
     * Diferencial de LL entre el tipo silvestre (Wild Type) y el mutante   
     * Pseudo-Log-Likelihood (PLL) por posición.  
     * Métricas de tipo energético (Energy-like scores).
 
-* **Representación espacial y embeddings.**   
-  * **Generación de embeddings:** Proceso de extracción de vectores de características a partir de la arquitectura del modelo.  
-  * **Representación de secuencias:** Cómo se integran los *tokens* estructurales en el flujo de datos.  
-  * **Métricas de Distancia:** Significado biológico y matemático de la proximidad entre proteínas dentro del espacio de embeddings.   
+* **Representación espacial y [[Embedding de proteínas|embeddings]].**
+  * **Generación de embeddings:** Proceso de extracción de vectores de características a partir de la arquitectura del modelo.
+  * **Representación de secuencias:** Cómo se integran los *tokens* estructurales en el flujo de datos.
+  * **Métricas de Distancia:** Significado biológico y matemático de la proximidad entre proteínas dentro del espacio de [[Embedding de proteínas|embeddings]].   
 * **Análisis de Implementación:**  
   * Se analizará el código fuente del [pLM SaProt](https://github.com/westlake-repl/SaProt) para identificar las funciones exactas que calculan el *score* de mutación. En la [wiki](https://github.com/westlake-repl/SaprotHub/wiki/SaprotHub-v2-\(latest\)#introduction-of-saprot-mutation-score) se tiene una información relevante sobre el score. 
 
@@ -60,6 +60,6 @@ En la jornada de hoy se intentará hacer un análisis de los dos documentos que 
 
 El objetivo de esta lectura es doble:
 
-1. **Enfoque en XAI (Explicabilidad):** Analizar las técnicas *post-hoc* (como SHAP y Saliency Maps) aplicadas al modelo para entender cómo se interpretan las predicciones en sitios de unión y mutaciones.  
-2. **Aplicación Práctica:** Revisar los resultados de los modelos específicos de estabilidad, termoestabilidad y detección de sitios de unión (*Binding Sites*), con especial atención a los datos de mutagénesis por saturación en sitio único y el cálculo de los *scores* de estabilidad.
+1. **Enfoque en XAI (Explicabilidad):** Analizar las técnicas *post-hoc* (como [[SHAP]] y [[Saliency Maps]]) aplicadas al modelo para entender cómo se interpretan las predicciones en sitios de unión y [[Mutación|mutaciones]].
+2. **Aplicación Práctica:** Revisar los resultados de los modelos específicos de [[Estabilidad proteica|estabilidad]], termoestabilidad y detección de sitios de unión (*Binding Sites*), con especial atención a los datos de mutagénesis por saturación en sitio único y el cálculo de los *scores* de estabilidad.
 

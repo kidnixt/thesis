@@ -3,7 +3,7 @@
 
 El documento utiliza el score de mutación como métrica principal. Técnicamente, esto no es una medida de "salud", sino una medida de **sorpresa del modelo**.
 
-- **Fundamento:** SaProt, al ser un modelo autorregresivo/masked, estima una distribución de probabilidad sobre un vocabulario de tokens. El score reportado es un **Log-Likelihood Ratio (LLR)**.
+- **Fundamento:** SaProt, al ser un modelo de **masked language modeling (MLM)** (similar a BERT/ESM, no autorregresivo), estima una distribución de probabilidad sobre un vocabulario de tokens. El score reportado es un **[[Log-Likelihood Ratio]] (LLR)**.
 - **Justificación:** Se realiza este cálculo para medir qué tan desplazada queda la distribución de probabilidad cuando se fuerza un token específico (mutante) en una posición dada, comparado con el token original (WT).
 - **Incoherencia Estadística:** El informe clasifica como "menos favorables" a **D314A (-1.30)** y **S126R (-7.33)**. Desde la teoría de la información, esto es un error de interpretación de magnitudes. Siendo una escala logarítmica, la densidad de probabilidad de S126R es órdenes de magnitud menor. Etiquetarlos bajo la misma categoría ignora la distribución de los datos; -1.30 suele estar dentro del ruido de fondo o de la varianza normal del modelo, mientras que -7.33 es un _outlier_ estadístico claro.
 
@@ -20,27 +20,27 @@ Se menciona el uso de `Model-Binding_Site_Detection-650M` y el valor "1".
 - **Metodología:** Se reemplaza cada token original por el token representativo de la Alanina.
 - **Justificación:** En términos de modelos, esto es una **prueba de robustez ante perturbaciones**. Se busca observar qué posiciones, al ser reemplazadas por un token "neutro" (que tiene una distribución de probabilidad muy plana en el dataset de entrenamiento), generan un colapso en el score de salida. Las "caídas pronunciadas" identifican posiciones con alta **información mutua** respecto a la estabilidad global.
 
-### 4. Saliency Maps: Atribución Basada en Gradientes
+### 4. [[Saliency Maps]]: Atribución Basada en Gradientes
 
-Para explicar qué son los **Saliency Maps** sin vueltas: es básicamente ver qué tanto se "rompe" o cambia la predicción si mueves un poquito los valores de entrada.
+Para explicar qué son los **[[Saliency Maps]]** sin vueltas: es básicamente ver qué tanto se "rompe" o cambia la predicción si mueves un poquito los valores de entrada.
 
 - **Explicación técnica:** Se calcula el gradiente de la salida (el score) respecto a los **embeddings de entrada** (los vectores de 480 dimensiones).
 - **Interpretación:** Si una posición tiene un pico de _Saliency_, significa que el modelo es **extremadamente sensible** a esa posición. Es como un "indicador de atención": nos dice que los pesos de la red están amplificando la señal de esos tokens específicos para llegar al resultado.
 - **Ejes:** El eje X es la secuencia (el índice del token) y el eje Y es la magnitud de ese gradiente. Picos altos = el modelo está "mirando" ahí para decidir.
     
 
-### 5. Análisis del Espacio Latente (Embeddings)
+### 5. Análisis del Espacio Latente ([[Embedding de proteínas|Embeddings]])
 
-El informe menciona que los embeddings de 480 dimensiones capturan secuencia y estructura.
+El informe menciona que los [[Embedding de proteínas|embeddings]] de 480 dimensiones capturan secuencia y estructura.
 
 - **Justificación:** SaProt no usa tokens de aminoácidos puros, sino **FoldTokens**. Esto significa que el espacio latente está pre-condicionado por un algoritmo de discretización estructural (3Di).
 - **Implicancia:** Los vectores resultantes no viven en un espacio semántico de "letras", sino en un espacio de **formas locales**. Por eso, el modelo puede "predecir" estabilidad sin ejecutar una simulación física; simplemente detecta si el token estructural "encaja" en el contexto de los tokens vecinos.
     
 
-### 6. SHAP: Descomposición de Contribuciones
+### 6. [[SHAP]]: Descomposición de Contribuciones
 
 - **Metodología:** Se analizan los "Top 15 tokens".
-- **Justificación:** SHAP intenta asignar un "valor de pago" (basado en valores de Shapley) a cada token de entrada.
+- **Justificación:** [[SHAP]] intenta asignar un "valor de pago" (basado en valores de Shapley) a cada token de entrada.
 - **Incoherencia/Duda Técnica:** El informe menciona el token **"SIM-"**. En un pLM, esto no debería existir como aminoácido. Es altamente probable que sea un error en la interpretación de los tokens especiales del modelo (como `<CLS>`, `<SEP>` o `<PAD>`) o un artefacto de la herramienta de visualización (como SHAP for Transformers) que no está mapeando correctamente el vocabulario de SaProt.
 
 ---
@@ -57,9 +57,9 @@ El informe menciona que los embeddings de 480 dimensiones capturan secuencia y e
 
 Tienes razón en ser escéptico: el modelo no "sabe" biología en el sentido experimental, sabe **estadística**.
 
-- **Fundamento:** SaProt es un modelo de lenguaje. El score que entrega es un **Log-Likelihood Ratio (LLR)**. Se calcula como $\log(P(\text{mutante}) / P(\text{wild-type}))$.
+- **Fundamento:** SaProt es un [[Modelo de lenguaje de proteínas|modelo de lenguaje]]. El score que entrega es un **[[Log-Likelihood Ratio]] (LLR)**. Se calcula como $\log(P(\text{mutante}) / P(\text{wild-type}))$.
     
-- **Interpretación:** Si el score es negativo, significa que, según los datos evolutivos y estructurales con los que se entrenó el modelo, esa mutación es "poco probable". En la literatura de modelos de lenguaje de proteínas (pLMs), se ha demostrado una correlación altísima entre esta "baja probabilidad estadística" y un efecto **deletéreo** (dañino) en la estabilidad o función. No es una verdad absoluta, sino una inferencia basada en que la evolución ya "descartó" esas variantes.
+- **Interpretación:** Si el score es negativo, significa que, según los datos evolutivos y estructurales con los que se entrenó el modelo, esa [[Mutación|mutación]] es "poco probable". En la literatura de [[Modelo de lenguaje de proteínas|modelos de lenguaje de proteínas]] (pLMs), se ha demostrado una correlación altísima entre esta "baja probabilidad estadística" y un [[Efecto de mutaciones|efecto deletéreo]] (dañino) en la [[Estabilidad proteica|estabilidad]] o función. No es una verdad absoluta, sino una inferencia basada en que la evolución ya "descartó" esas variantes.
     
 
 ### 2. El "Valor = 1" y los Heatmaps

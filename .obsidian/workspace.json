@@ -11,10 +11,14 @@
             "id": "a744d4ac013f1e84",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "LLM/Saliency Maps.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Saliency Maps"
             }
           }
         ]
@@ -194,6 +198,8 @@
   },
   "active": "a744d4ac013f1e84",
   "lastOpenFiles": [
+    "LLM/Foldseek.md",
+    "LLM/Saliency Maps.md",
     "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
     "SAPROT/ANÁLISIS/Score LLR.md",
     "LLM/Log-Likelihood Ratio.md",
@@ -207,10 +213,8 @@
     "BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas.md",
     "BIO/MUTACIONES/Efecto de mutaciones.md",
     "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
-    "LLM/Saliency Maps.md",
     "LLM/SHAP.md",
     "BIO/MUTACIONES/Wild-type.md",
-    "LLM/Foldseek.md",
     "LLM/3Di.md",
     "TECNICAS/TECNICAS.md",
     "TECNICAS",

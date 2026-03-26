@@ -46,7 +46,8 @@
     "//images",
     "//SAPROT/SAPROT/ANÁLISIS",
     "//TECNICAS",
-    "//LLM"
+    "//LLM",
+    "//SAPROT"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

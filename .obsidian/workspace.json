@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
+                "file": "BITACORA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Explicabilidad SaProt (not by me)"
+              "title": "BITACORA"
             }
           }
         ]
@@ -75,16 +75,13 @@
             }
           },
           {
-            "id": "b9af77afb3e75066",
+            "id": "a6337ac7f9854444",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -201,6 +198,7 @@
   },
   "active": "a744d4ac013f1e84",
   "lastOpenFiles": [
+    "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
     "README.md",
     "BITACORA.md",
     "TECNICAS/XAI.md",
@@ -219,7 +217,6 @@
     "LLM/3Di.md",
     "LLM",
     "BIO/MUTACIONES/Wild-type.md",
-    "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
     "SAPROT/ANÁLISIS/Score LLR.md",
     "BIO/CONCEPTOS AVANZADOS/Embedding de proteínas.md",
     "BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas.md",

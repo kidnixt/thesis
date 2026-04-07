@@ -44,10 +44,7 @@
     "//BIO/BIO/PROPIEDADES",
     "//Tags",
     "//images",
-    "//SAPROT/SAPROT/ANÁLISIS",
-    "//TECNICAS",
-    "//LLM",
-    "//SAPROT"
+    "//SAPROT/SAPROT/ANÁLISIS"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

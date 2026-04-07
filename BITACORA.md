@@ -63,3 +63,25 @@ El objetivo de esta lectura es doble:
 1. **Enfoque en XAI (Explicabilidad):** Analizar las técnicas *post-hoc* (como [[SHAP]] y [[Saliency Maps]]) aplicadas al modelo para entender cómo se interpretan las predicciones en sitios de unión y [[Mutación|mutaciones]].
 2. **Aplicación Práctica:** Revisar los resultados de los modelos específicos de [[Estabilidad proteica|estabilidad]], termoestabilidad y detección de sitios de unión (*Binding Sites*), con especial atención a los datos de mutagénesis por saturación en sitio único y el cálculo de los *scores* de estabilidad.
 
+
+### **7 de abril, 2026**
+
+Durante la jornada se plantea como objetivo principal iniciar un análisis directo del código fuente de SaProt, con el fin de comprender cómo se calculan internamente los _scores_ utilizados en la evaluación de secuencias y mutaciones, así como la forma en que el modelo representa dichas secuencias a nivel vectorial.
+
+A diferencia de aproximaciones previas basadas en documentación y tutoriales, el foco se desplaza hacia la implementación concreta del modelo, buscando identificar las funciones responsables del procesamiento de secuencias, la generación de probabilidades y la derivación de métricas utilizadas en tareas de inferencia.
+
+En particular, se intentará localizar en el código:
+
+- Los puntos donde se generan los _logits_ del modelo y su posterior transformación en probabilidades (mediante funciones como _softmax_ o _log-softmax_), ya que estos constituyen la base del cálculo de _scores_.
+- Las funciones que implementan la evaluación de secuencias completas o por posición, con el objetivo de determinar si el modelo utiliza esquemas de _masked prediction_ (pseudo-likelihood) o evaluación directa de secuencia.
+- La forma en que se calcula el efecto de mutaciones, específicamente si se basa en diferencias de log-probabilidad entre la secuencia _wild type_ y sus variantes mutantes.
+
+De manera complementaria, se abordará el análisis de las representaciones internas del modelo, identificando:
+
+- Cómo se tokenizan las secuencias de aminoácidos antes de ser procesadas.
+- Qué estructuras de datos contienen los _embeddings_ generados por el modelo (por ejemplo, _hidden states_ o _last hidden state_).
+- Qué dimensiones tienen estas representaciones y cómo se organizan (por residuo o a nivel global de la proteína).
+
+El objetivo de esta sesión no es únicamente ubicar funciones dentro del código, sino establecer una correspondencia clara entre los conceptos teóricos previamente estudiados (como [[Log-Likelihood]] y [[Embedding de proteínas]]) y su implementación concreta en el modelo.
+
+Como resultado esperado, se busca obtener una comprensión operativa de cómo SaProt asigna puntuaciones a secuencias y cómo construye su representación interna de proteínas, sentando una base sólida para análisis posteriores más complejos.

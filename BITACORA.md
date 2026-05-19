@@ -85,3 +85,5 @@ De manera complementaria, se abordará el análisis de las representaciones inte
 El objetivo de esta sesión no es únicamente ubicar funciones dentro del código, sino establecer una correspondencia clara entre los conceptos teóricos previamente estudiados (como [[Log-Likelihood]] y [[Embedding de proteínas]]) y su implementación concreta en el modelo.
 
 Como resultado esperado, se busca obtener una comprensión operativa de cómo SaProt asigna puntuaciones a secuencias y cómo construye su representación interna de proteínas, sentando una base sólida para análisis posteriores más complejos.
+
+### ** 15 de mayo, 2026**

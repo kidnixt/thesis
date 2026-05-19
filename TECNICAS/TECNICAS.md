@@ -1,3 +1,6 @@
+---
+color: var(--mk-color-turquoise)
+---
 # TECNICAS
 
 Esta carpeta contiene técnicas de Machine Learning y explicabilidad que se utilizan en diversos contextos.

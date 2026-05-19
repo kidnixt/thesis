@@ -25,14 +25,12 @@
             "id": "915fddd749a49bcf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "BIO/MUTACIONES/Wild-type.md",
-                "mode": "source",
-                "source": false
+                "path": "LLM"
               },
               "icon": "lucide-file",
-              "title": "Wild-type"
+              "title": "LLM"
             }
           }
         ],
@@ -90,16 +88,13 @@
             }
           },
           {
-            "id": "66f26eb37e5f7603",
+            "id": "072d5750ab0cd2bc",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -214,16 +209,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "915fddd749a49bcf",
+  "active": "072d5750ab0cd2bc",
   "lastOpenFiles": [
-    "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",
-    "SAPROT/ANÁLISIS/Score LLR.md",
-    "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
-    "SAPROT/SAPROT.md",
+    "LLM/LLM.md",
     "BITACORA.md",
+    "PAPERS/PAPERS.md",
+    "PAPERS",
     "README.md",
-    "TECNICAS/XAI.md",
+    "SAPROT/PAPERS.md",
     "TECNICAS/TECNICAS.md",
+    "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
+    "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",
+    "BIO/MUTACIONES/Wild-type.md",
+    "SAPROT/ANÁLISIS/Score LLR.md",
+    "SAPROT/SAPROT.md",
+    "TECNICAS/XAI.md",
     "TECNICAS/SHAP.md",
     "TECNICAS/Saliency Maps.md",
     "TECNICAS",
@@ -233,26 +233,21 @@
     "LLM/Masked Language Model.md",
     "LLM/Log-Likelihood Ratio.md",
     "LLM/Foldseek.md",
-    "LLM/LLM.md",
     "LLM/3Di.md",
     "LLM",
-    "BIO/MUTACIONES/Wild-type.md",
     "BIO/CONCEPTOS AVANZADOS/Embedding de proteínas.md",
     "BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas.md",
     "BIO/MUTACIONES/Efecto de mutaciones.md",
     "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
     "Tags/Tags.md",
     "Tags",
-    "SAPROT/ANÁLISIS/ANÁLISIS.md",
     "SAPROT/ANÁLISIS",
     "Attachments/Pasted image 20260325160307.png",
     "Attachments/Pasted image 20260325160247.png",
     "Attachments",
-    "images/images.md",
     "BIO/CONCEPTOS AVANZADOS",
     "BIO/CONTEXTO CELULAR",
     "BIO/DISEÑO",
-    "BIO/MUTACIONES",
-    "BIO/INTERACCIONES"
+    "BIO/MUTACIONES"
   ]
 }

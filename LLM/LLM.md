@@ -1,3 +1,6 @@
+---
+color: var(--mk-color-brown)
+---
 # LLM - Modelos de Lenguaje
 
 Esta carpeta contiene conceptos fundamentales de Modelos de Lenguaje (Language Models).

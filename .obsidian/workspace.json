@@ -11,14 +11,12 @@
             "id": "e1aff68c661be0cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "PAPERS/DrugLLM.md",
-                "mode": "source",
-                "source": false
+                "path": "BIO"
               },
               "icon": "lucide-file",
-              "title": "DrugLLM"
+              "title": "BIO"
             }
           }
         ]
@@ -196,24 +194,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e1aff68c661be0cf",
+  "active": "c6c34f530ff43466",
   "lastOpenFiles": [
+    "SAPROT/SAPROT.md",
+    "ESM-3/ESM-3.md",
+    "TECNICAS/TECNICAS.md",
+    "PAPERS/PAPERS.md",
+    "ESM-3/TUTORIAL.md",
+    "BIO/PROPIEDADES/Nivel de expresión génica.md",
+    "BIO/CONCEPTOS AVANZADOS/CONCEPTOS AVANZADOS.md",
     "PAPERS/DrugLLM.md",
+    "PAPERS/DrugLLM.pdf",
     "PAPERS/Language models enable zero-shot prediction of the effects of mutations on protein function.pdf",
     "PAPERS/Unconfirmed 781880.crdownload",
     "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",
-    "PAPERS/DrugLLM.pdf",
-    "PAPERS/PAPERS.md",
     "LLM/LLM.md",
     "BITACORA.md",
     "PAPERS",
     "README.md",
     "SAPROT/PAPERS.md",
-    "TECNICAS/TECNICAS.md",
     "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
     "BIO/MUTACIONES/Wild-type.md",
     "SAPROT/ANÁLISIS/Score LLR.md",
-    "SAPROT/SAPROT.md",
     "TECNICAS/XAI.md",
     "TECNICAS/SHAP.md",
     "TECNICAS/Saliency Maps.md",
@@ -226,10 +228,6 @@
     "LLM/Foldseek.md",
     "LLM/3Di.md",
     "LLM",
-    "BIO/CONCEPTOS AVANZADOS/Embedding de proteínas.md",
-    "BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas.md",
-    "BIO/MUTACIONES/Efecto de mutaciones.md",
-    "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
     "Tags",
     "SAPROT/ANÁLISIS",
     "Attachments/Pasted image 20260325160307.png",

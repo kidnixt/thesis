@@ -4,37 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c78047a75e17bdaa",
+        "id": "d0692739801a374d",
         "type": "tabs",
         "children": [
           {
-            "id": "a744d4ac013f1e84",
+            "id": "e1aff68c661be0cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",
+                "file": "PAPERS/DrugLLM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Score de Mutación SaProt"
-            }
-          },
-          {
-            "id": "915fddd749a49bcf",
-            "type": "leaf",
-            "state": {
-              "type": "mk-space",
-              "state": {
-                "path": "LLM"
-              },
-              "icon": "lucide-file",
-              "title": "LLM"
+              "title": "DrugLLM"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,17 +196,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "072d5750ab0cd2bc",
+  "active": "e1aff68c661be0cf",
   "lastOpenFiles": [
+    "PAPERS/DrugLLM.md",
+    "PAPERS/Language models enable zero-shot prediction of the effects of mutations on protein function.pdf",
+    "PAPERS/Unconfirmed 781880.crdownload",
+    "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",
+    "PAPERS/DrugLLM.pdf",
+    "PAPERS/PAPERS.md",
     "LLM/LLM.md",
     "BITACORA.md",
-    "PAPERS/PAPERS.md",
     "PAPERS",
     "README.md",
     "SAPROT/PAPERS.md",
     "TECNICAS/TECNICAS.md",
     "SAPROT/ANÁLISIS/Explicabilidad SaProt (not by me).md",
-    "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",
     "BIO/MUTACIONES/Wild-type.md",
     "SAPROT/ANÁLISIS/Score LLR.md",
     "SAPROT/SAPROT.md",
@@ -239,15 +230,11 @@
     "BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas.md",
     "BIO/MUTACIONES/Efecto de mutaciones.md",
     "BIO/FUNDAMENTOS/Plegamiento de proteínas.md",
-    "Tags/Tags.md",
     "Tags",
     "SAPROT/ANÁLISIS",
     "Attachments/Pasted image 20260325160307.png",
     "Attachments/Pasted image 20260325160247.png",
     "Attachments",
-    "BIO/CONCEPTOS AVANZADOS",
-    "BIO/CONTEXTO CELULAR",
-    "BIO/DISEÑO",
-    "BIO/MUTACIONES"
+    "BIO/CONCEPTOS AVANZADOS"
   ]
 }

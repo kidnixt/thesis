@@ -44,7 +44,8 @@
     "//Tags",
     "//images",
     "//SAPROT/SAPROT/ANÁLISIS",
-    "/"
+    "/",
+    "//PAPERS"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

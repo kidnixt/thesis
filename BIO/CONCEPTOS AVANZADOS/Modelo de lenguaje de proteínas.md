@@ -13,10 +13,12 @@ Los modelos aprenden:
 
 ## Arquitectura típica
 
-La mayoría usa **Transformers**:
+La mayoría usa **[[Transformer|Transformers]]**:
 - Procesan secuencias completas
 - Capturan dependencias a larga distancia
-- Generan representaciones (embeddings) ricas
+- Generan representaciones ([[Embedding de proteínas|embeddings]]) ricas
+
+Muchos pLMs utilizan [[Masked Language Model|Masked Language Modeling (MLM)]] para el entrenamiento.
 
 ## Ejemplos de modelos
 

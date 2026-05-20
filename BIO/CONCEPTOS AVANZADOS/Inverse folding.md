@@ -13,6 +13,8 @@ El inverse folding permite:
 - Explorar el [[Espacio de secuencias proteicas]] compatible con una estructura
 - Optimizar secuencias manteniendo la estructura
 
+Complementa las capacidades de [[Zero-shot prediction]] al permitir generar nuevas variantes.
+
 ## Aplicaciones
 
 - **[[Diseño de proteínas]]**: crear proteínas con formas específicas

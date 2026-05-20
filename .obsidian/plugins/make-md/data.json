@@ -43,7 +43,11 @@
     "//images",
     "//Tags",
     "//ESM-3",
-    "//PAPERS"
+    "//PAPERS",
+    "//LLM",
+    "//SAPROT",
+    "//PAPERS/PAPERS/LanguageModels",
+    "//PAPERS/PAPERS/DrugLLM"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

@@ -47,7 +47,9 @@
     "//LLM",
     "//SAPROT",
     "//PAPERS/PAPERS/LanguageModels",
-    "//PAPERS/PAPERS/DrugLLM"
+    "//PAPERS/PAPERS/DrugLLM",
+    "//BIO",
+    "//TECNICAS"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

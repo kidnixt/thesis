@@ -2,6 +2,17 @@
 
 Repositorio de documentación y recursos para tesis de maestría en investigación.
 
+## 🔍 Navegación por Secciones
+
+Accede directamente a los índices temáticos de cada sección:
+
+- **[BIO](BIO/INDEX.md)** - 🧬 Fundamentos de biología molecular (45+ conceptos)
+- **[LLM](LLM/INDEX.md)** - 📊 Modelos de lenguaje y arquitecturas
+- **[TECNICAS](TECNICAS/INDEX.md)** - 🔍 Técnicas XAI y explicabilidad
+- **[SAPROT](SAPROT/INDEX.md)** - 🤖 Modelo SaProt (structure-aware)
+- **[ESM-3](ESM-3/INDEX.md)** - 🚀 Modelo ESM-3
+- **[PAPERS](PAPERS/PAPERS.md)** - 📚 Papers estudiados
+
 ## Estructura de Directorios
 
 ```

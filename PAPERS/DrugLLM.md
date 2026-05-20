@@ -2,9 +2,9 @@
 
 ## Resumen general
 
-DrugLLM propone una idea bastante distinta a la mayoría de trabajos clásicos de diseño molecular. En lugar de entrenar un modelo para generar moléculas desde cero o predecir propiedades químicas de forma supervisada, el paper reformula el problema de optimización molecular como una tarea autoregresiva de modificación molecular. El modelo aprende secuencias de cambios estructurales entre moléculas y trata de inferir las reglas subyacentes que relacionan estructura y propiedad. Conceptualmente, el paper intenta acercar el razonamiento químico de un medicinal chemist a un modelo Transformer entrenado sobre trayectorias de modificaciones moleculares.
+DrugLLM propone una idea bastante distinta a la mayoría de trabajos clásicos de diseño molecular. En lugar de entrenar un modelo para generar moléculas desde cero o predecir propiedades químicas de forma supervisada, el paper reformula el problema de optimización molecular como una tarea autoregresiva de [[DrugLLM/NMP|modificación molecular]]. El modelo aprende secuencias de cambios estructurales entre moléculas y trata de inferir las reglas subyacentes que relacionan [[DrugLLM/SAR|estructura y propiedad]]. Conceptualmente, el paper intenta acercar el razonamiento de un [[DrugLLM/Medicinal chemistry|medicinal chemist]] a un [[LLM/Transformer|Transformer]] entrenado sobre trayectorias de modificaciones.
 
-El objetivo principal es resolver un problema muy importante en drug discovery: cómo optimizar moléculas cuando existen muy pocos ejemplos disponibles. Los métodos tradicionales de machine learning en química suelen requerir decenas de miles de muestras etiquetadas para aprender relaciones SAR complejas. DrugLLM intenta escapar de esa dependencia mediante in-context learning y few-shot reasoning.
+El objetivo principal es resolver un problema muy importante en drug discovery: cómo optimizar moléculas cuando existen muy pocos ejemplos disponibles. Los métodos tradicionales de machine learning en química suelen requerir decenas de miles de muestras etiquetadas para aprender relaciones [[DrugLLM/SAR|SAR]] complejas. DrugLLM intenta escapar de esa dependencia mediante [[DrugLLM/In-context learning|in-context learning]] y [[BIO/CONCEPTOS AVANZADOS/Zero-shot prediction|few-shot]] reasoning.
 
 ---
 
@@ -30,13 +30,13 @@ Esto cambia completamente la naturaleza del aprendizaje. El modelo pasa de memor
 
 # Functional Group Tokenization (FGT)
 
-Uno de los aportes más importantes del paper es FGT (Functional Group Tokenization). El trabajo argumenta que SMILES no es una representación adecuada para LLMs porque pequeñas modificaciones estructurales pueden producir secuencias completamente distintas. Esto introduce una enorme variabilidad sintáctica que dificulta el aprendizaje contextual.
+Uno de los aportes más importantes del paper es [[DrugLLM/FGT|FGT (Functional Group Tokenization)]]. El trabajo argumenta que [[DrugLLM/SMILES|SMILES]] no es una representación adecuada para LLMs porque pequeñas modificaciones estructurales pueden producir secuencias completamente distintas. Esto introduce una enorme variabilidad sintáctica que dificulta el aprendizaje contextual.
 
-FGT intenta solucionar esto representando moléculas mediante grupos funcionales y fragmentos estructurales semánticamente relevantes. En lugar de trabajar a nivel atómico como SMILES, el modelo trabaja con motifs químicos más cercanos al razonamiento humano en química medicinal.
+[[DrugLLM/FGT|FGT]] intenta solucionar esto representando moléculas mediante grupos funcionales y fragmentos estructurales semánticamente relevantes. En lugar de trabajar a nivel atómico como [[DrugLLM/SMILES|SMILES]], el modelo trabaja con motifs químicos más cercanos al razonamiento humano en [[DrugLLM/Medicinal chemistry|química medicinal]].
 
-El paper enfatiza mucho que FGT no está diseñado para retrosíntesis ni para synthetic planning. Su objetivo es servir como una representación orientada al razonamiento contextual. Los grupos funcionales son tratados como “reasoning primitives”, es decir, unidades semánticas básicas de modificación química.
+El paper enfatiza mucho que [[DrugLLM/FGT|FGT]] no está diseñado para [[DrugLLM/Retrosíntesis|retrosíntesis]] ni para synthetic planning. Su objetivo es servir como una representación orientada al razonamiento contextual. Los grupos funcionales son tratados como “reasoning primitives”, es decir, unidades semánticas básicas de modificación química.
 
-FGT también reduce significativamente la longitud de secuencia. El paper reporta:
+[[DrugLLM/FGT|FGT]] también reduce significativamente la longitud de secuencia. El paper reporta:
 
 ```text
 SMILES promedio: 38.22 tokens
@@ -45,15 +45,15 @@ FGT promedio: 17.86 tokens
 
 lo que representa aproximadamente un 53.27% de compresión.
 
-Además, el vocabulario resultante es mucho más eficiente que métodos como RECAP o BRICS. FGT logra casi cobertura total del espacio molecular usando apenas ~4800 tokens.
+Además, el vocabulario resultante es mucho más eficiente que métodos como RECAP o BRICS. [[DrugLLM/FGT|FGT]] logra casi cobertura total del espacio molecular usando apenas ~4800 tokens.
 
 ---
 
 # Paradigma NMP (Next Modification Prediction)
 
-El paradigma central del entrenamiento es llamado Next Modification Prediction (NMP). El modelo recibe ejemplos de modificaciones moleculares orientadas a una propiedad específica y debe inferir cuál sería la siguiente modificación adecuada.
+El paradigma central del entrenamiento es llamado [[DrugLLM/NMP|Next Modification Prediction (NMP)]]. El modelo recibe ejemplos de modificaciones moleculares orientadas a una propiedad específica y debe inferir cuál sería la siguiente modificación adecuada.
 
-El paper estructura los datos como párrafos completos de modificaciones moleculares. Cada párrafo contiene ejemplos coherentes asociados a una misma propiedad o tendencia farmacológica. Por ejemplo, un párrafo puede contener múltiples modificaciones asociadas a aumentar solubilidad o disminuir IC50.
+El paper estructura los datos como párrafos completos de modificaciones moleculares. Cada párrafo contiene ejemplos coherentes asociados a una misma propiedad o tendencia farmacológica. Por ejemplo, un párrafo puede contener múltiples modificaciones asociadas a aumentar solubilidad o disminuir [[DrugLLM/IC50|IC50]].
 
 La entrada general tiene la forma:
 
@@ -73,15 +73,15 @@ y aprende a generar la siguiente molécula token por token utilizando el context
 
 # Dataset y escala de entrenamiento
 
-El paper construye un dataset extremadamente grande utilizando ZINC y ChEMBL. Después de filtrar moléculas drug-like y realizar canonicalización química, los autores generan aproximadamente:
+El paper construye un dataset extremadamente grande utilizando [[DrugLLM/ZINC|ZINC]] y [[DrugLLM/ChEMBL|ChEMBL]]. Después de filtrar moléculas drug-like y realizar canonicalización química, los autores generan aproximadamente:
 
 - 184.7 millones de moléculas
-- 24.6 millones de párrafos de modificación
+- 24.6 millones de párrafos de [[DrugLLM/NMP|modificación]]
 - más de 10.000 propiedades biológicas y fisicoquímicas
 
-Esto es importante porque el trabajo sugiere que la capacidad few-shot emerge cuando el modelo observa una enorme diversidad de tareas de modificación molecular durante pretraining.
+Esto es importante porque el trabajo sugiere que la capacidad [[BIO/CONCEPTOS AVANZADOS/Zero-shot prediction|few-shot]] emerge cuando el modelo observa una enorme diversidad de tareas de modificación molecular durante pretraining.
 
-El clustering molecular se realiza mediante similitud de scaffolds utilizando fingerprints RDKit y Dice similarity con threshold 0.60.
+El clustering molecular se realiza mediante similitud de scaffolds utilizando [[DrugLLM/Fingerprints|fingerprints RDKit]] y Dice similarity con threshold 0.60.
 
 ---
 
@@ -106,12 +106,12 @@ La evaluación principal consiste en darle al modelo unos pocos ejemplos de modi
 
 Las propiedades fisicoquímicas evaluadas incluyen:
 
-- LogP
+- [[DrugLLM/LogP|LogP]]
 - solubilidad
-- TPSA
-- synthetic accessibility
+- [[DrugLLM/TPSA|TPSA]]
+- [[DrugLLM/Synthetic accessibility|synthetic accessibility]]
 
-Los resultados muestran algo bastante importante: modelos clásicos como JTVAE, VJTNN y MoLeR prácticamente colapsan a comportamiento aleatorio en este escenario few-shot. Sus success rates rondan ~0.50.
+Los resultados muestran algo bastante importante: modelos clásicos como JTVAE, VJTNN y MoLeR prácticamente colapsan a comportamiento aleatorio en este escenario [[BIO/CONCEPTOS AVANZADOS/Zero-shot prediction|few-shot]]. Sus success rates rondan ~0.50.
 
 DrugLLM, en cambio, mejora progresivamente con más contexto y alcanza aproximadamente 0.72 de success rate.
 
@@ -135,10 +135,10 @@ El paper interpreta esto como evidencia de que el modelo logra inferir reglas SA
 
 # Zero-shot molecular optimization
 
-Otra sección importante es zero-shot optimization. Aquí el modelo recibe únicamente instrucciones en lenguaje natural como:
+Otra sección importante es [[BIO/CONCEPTOS AVANZADOS/Zero-shot prediction|zero-shot]] optimization. Aquí el modelo recibe únicamente instrucciones en lenguaje natural como:
 
 ```text
-Increase QED and FractionCSP3
+Increase [[DrugLLM/QED|QED]] and [[DrugLLM/FractionCSP3|FractionCSP3]]
 ```
 
 sin ejemplos explícitos.
@@ -153,7 +153,7 @@ DrugLLM es comparado contra:
 
 El resultado importante es que los LLMs generales entienden parcialmente las instrucciones, pero tienen dificultades para producir modificaciones moleculares útiles. DrugLLM supera ampliamente a todos los modelos evaluados.
 
-Esto sugiere que el conocimiento químico especializado y la representación FGT son mucho más importantes que simplemente aumentar escala del modelo.
+Esto sugiere que el conocimiento químico especializado y la representación [[DrugLLM/FGT|FGT]] son mucho más importantes que simplemente aumentar escala del modelo.
 
 ---
 
@@ -163,7 +163,7 @@ La parte más fuerte del paper es probablemente la validación experimental.
 
 Los autores utilizan ivabradina como molécula inicial y aplican DrugLLM para generar nuevos inhibidores HCN2. El modelo recibe tres pares de ejemplos de optimización y produce nuevas moléculas candidatas.
 
-Dos compuestos generados, HCN2-M1 y HCN2-M2, fueron sintetizados y testeados experimentalmente mediante patch-clamp en células HEK293.
+Dos compuestos generados, HCN2-M1 y HCN2-M2, fueron sintetizados y testeados experimentalmente mediante [[DrugLLM/Patch-clamp|patch-clamp]] en células HEK293.
 
 Ambos mostraron IC50 aproximadamente tres veces menor que ivabradina.
 
@@ -175,11 +175,11 @@ También analizan attention maps y observan que el modelo presta atención a reg
 
 # Aspectos conceptuales importantes
 
-El modelo muestra una tendencia emergente a preservar el scaffold central de las moléculas mientras modifica regiones periféricas. Esto no fue impuesto explícitamente, sino que emerge del entrenamiento y de la estructura FGT.
+El modelo muestra una tendencia emergente a preservar el scaffold central de las moléculas mientras modifica regiones periféricas. Esto no fue impuesto explícitamente, sino que emerge del entrenamiento y de la estructura [[DrugLLM/FGT|FGT]].
 
-Esto es muy interesante porque reproduce comportamientos típicos de medicinal chemistry real, donde normalmente se preserva el core estructural y se optimizan sustituyentes periféricos.
+Esto es muy interesante porque reproduce comportamientos típicos de [[DrugLLM/Medicinal chemistry|medicinal chemistry]] real, donde normalmente se preserva el core estructural y se optimizan sustituyentes periféricos.
 
-El paper argumenta que FGT ayuda además a reducir hallucinations químicas porque trabaja directamente con fragmentos funcionales válidos y utiliza constraints semánticos implícitos.
+El paper argumenta que [[DrugLLM/FGT|FGT]] ayuda además a reducir hallucinations químicas porque trabaja directamente con fragmentos funcionales válidos y utiliza constraints semánticos implícitos.
 
 ---
 
@@ -197,10 +197,10 @@ Además, gran parte del benchmark biológico depende de predictors neuronales au
 
 # Interpretación general
 
-DrugLLM es importante porque cambia el framing conceptual del problema. El paper no trata simplemente de generar moléculas válidas, sino de aprender trayectorias de modificación molecular mediante razonamiento contextual.
+DrugLLM es importante porque cambia el framing conceptual del problema. El paper no trata simplemente de generar moléculas válidas, sino de aprender trayectorias de [[DrugLLM/NMP|modificación molecular]] mediante razonamiento contextual.
 
-Ese cambio conceptual acerca el problema de molecular optimization a ideas modernas de foundation models, in-context learning y reasoning autoregresivo.
+Ese cambio conceptual acerca el problema de molecular optimization a ideas modernas de [[LanguageModels/Foundation models|foundation models]], [[DrugLLM/In-context learning|in-context learning]] y reasoning autoregresivo.
 
-La verdadera innovación probablemente no sea el Transformer en sí, sino la idea de representar química como secuencias de modificaciones estructurales semánticamente interpretables.
+La verdadera innovación probablemente no sea el [[LLM/Transformer|Transformer]] en sí, sino la idea de representar química como secuencias de modificaciones estructurales semánticamente interpretables.
 
-El trabajo sugiere que los futuros modelos de drug discovery podrían parecerse menos a modelos supervisados clásicos y más a sistemas capaces de razonar contextualmente sobre relaciones SAR utilizando conocimiento aprendido durante pretraining masivo.
+El trabajo sugiere que los futuros modelos de drug discovery podrían parecerse menos a modelos supervisados clásicos y más a sistemas capaces de razonar contextualmente sobre relaciones [[DrugLLM/SAR|SAR]] utilizando conocimiento aprendido durante pretraining masivo.

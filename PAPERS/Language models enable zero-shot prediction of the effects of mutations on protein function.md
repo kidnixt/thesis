@@ -2,11 +2,11 @@
 
 ## Resumen general
 
-Este paper es uno de los trabajos fundacionales más importantes en protein language models (PLMs). El aporte central del trabajo es demostrar que un language model entrenado únicamente sobre secuencias proteicas puede aprender información funcional y estructural suficiente como para predecir el efecto de mutaciones sin entrenamiento supervisado específico para cada proteína.
+Este paper es uno de los trabajos fundacionales más importantes en [[BIO/CONCEPTOS AVANZADOS/Modelo de lenguaje de proteínas|protein language models (PLMs)]]. El aporte central del trabajo es demostrar que un [[LLM/Transformer|language model]] entrenado únicamente sobre secuencias proteicas puede aprender información funcional y estructural suficiente como para predecir el [[BIO/MUTACIONES/Efecto de mutaciones|efecto de mutaciones]] sin entrenamiento supervisado específico para cada proteína.
 
 El paper marca un cambio conceptual muy importante dentro de bioinformática y protein engineering. Antes de este trabajo, la predicción de efectos mutacionales dependía principalmente de:
 
-- MSAs específicos por familia,
+- [[LanguageModels/MSA|MSAs]] específicos por familia,
 - modelos evolutivos entrenados proteína por proteína,
 - o datasets experimentales supervisados.
 
@@ -14,13 +14,13 @@ Este trabajo propone algo distinto:
 
 > entrenar un único modelo generalista sobre millones de secuencias y transferir ese conocimiento a proteínas nunca vistas.
 
-Ese cambio conceptual es extremadamente importante porque introduce la idea de “foundation models for proteins”.
+Ese cambio conceptual es extremadamente importante porque introduce la idea de [[LanguageModels/Foundation models|”foundation models for proteins”]].
 
 ---
 
 # Problema del área
 
-El problema central es predecir cómo una mutación afecta la función de una proteína.
+El problema central es predecir cómo una [[BIO/MUTACIONES/Mutación|mutación]] afecta la [[BIO/FUNCIÓN/Función de proteínas|función]] de una proteína.
 
 Por ejemplo:
 
@@ -30,19 +30,19 @@ R151G
 L99F
 ```
 
-Una mutación puede:
+Una [[BIO/MUTACIONES/Mutación|mutación]] puede:
 
-- destruir estabilidad,
-- alterar binding,
-- modificar actividad catalítica,
+- destruir [[BIO/PROPIEDADES/Estabilidad proteica|estabilidad]],
+- alterar [[BIO/PROPIEDADES/Afinidad de unión|binding]],
+- modificar [[BIO/PROPIEDADES/Actividad enzimática|actividad catalítica]],
 - cambiar folding,
 - o incluso aumentar función.
 
-Experimentalmente esto es extremadamente costoso. Técnicas como Deep Mutational Scanning generan datasets grandes, pero siguen siendo limitadas comparadas con el espacio total de secuencias posibles.
+Experimentalmente esto es extremadamente costoso. Técnicas como [[LanguageModels/Deep Mutational Scanning|Deep Mutational Scanning]] generan datasets grandes, pero siguen siendo limitadas comparadas con el espacio total de secuencias posibles.
 
 El paper busca resolver:
 
-> si un language model entrenado sobre evolución natural puede inferir restricciones funcionales sin supervisión explícita.
+> si un [[LLM/Transformer|language model]] entrenado sobre evolución natural puede inferir restricciones funcionales sin supervisión explícita.
 
 ---
 
@@ -50,11 +50,11 @@ El paper busca resolver:
 
 La hipótesis principal es muy elegante:
 
-> la evolución natural contiene información implícita sobre estructura y función proteica.
+> la evolución natural contiene información implícita sobre [[BIO/FUNDAMENTOS/Estructura de proteínas|estructura]] y [[BIO/FUNCIÓN/Función de proteínas|función]] proteica.
 
-Si ciertas mutaciones nunca aparecen en evolución, probablemente son deletéreas. Si ciertas posiciones muestran covariación, probablemente existe dependencia estructural o funcional.
+Si ciertas [[BIO/MUTACIONES/Mutación|mutaciones]] nunca aparecen en evolución, probablemente son deletéreas. Si ciertas posiciones muestran [[LanguageModels/Epistasis|covariación]], probablemente existe dependencia estructural o funcional.
 
-El paper argumenta que un Transformer suficientemente grande puede aprender esas regularidades directamente desde secuencias sin necesidad de alineamientos explícitos.
+El paper argumenta que un [[LLM/Transformer|Transformer]] suficientemente grande puede aprender esas regularidades directamente desde secuencias sin necesidad de [[LanguageModels/MSA|alineamientos]] explícitos.
 
 En esencia, el modelo aprende:
 
@@ -63,17 +63,17 @@ qué aminoácidos son "esperables"
 en determinado contexto evolutivo
 ```
 
-y utiliza eso para evaluar mutaciones.
+y utiliza eso para evaluar [[BIO/MUTACIONES/Mutación|mutaciones]].
 
 ---
 
 # Relación con NLP
 
-El trabajo está fuertemente inspirado en GPT y language modeling autoregresivo.
+El trabajo está fuertemente inspirado en GPT y [[LLM/Transformer|language modeling]] autoregresivo.
 
 La idea es tratar proteínas como lenguaje biológico.
 
-Una secuencia:
+Una [[BIO/FUNDAMENTOS/Secuencia de aminoácidos|secuencia]]:
 
 ```text
 MKTLLILAV...
@@ -87,7 +87,7 @@ $$
 P(x_t \mid x_1, x_2, ..., x_{t-1})  
 $$
 
-o en versiones masked:
+o en versiones [[LLM/Masked Language Model|masked]]:
 
 $$ 
 P(x_i \mid x_{\setminus i})  
@@ -98,7 +98,7 @@ dependiendo del entrenamiento.
 La intuición es exactamente la misma que en NLP:
 
 - ciertas palabras son coherentes en contexto,
-- ciertos aminoácidos son coherentes en contexto estructural/evolutivo.
+- ciertos [[BIO/FUNDAMENTOS/Aminoácido|aminoácidos]] son coherentes en contexto estructural/evolutivo.
 
 ---
 
@@ -114,7 +114,7 @@ El modelo es entrenado sobre aproximadamente:
 250 millones de secuencias proteicas
 ```
 
-provenientes de UniParc/UniRef.
+provenientes de [[LanguageModels/UniParc y UniRef|UniParc/UniRef]].
 
 Esto era enorme para la época.
 
@@ -122,16 +122,16 @@ El paper muestra que al aumentar:
 
 - cantidad de secuencias,
 - tamaño del modelo,
-- capacidad Transformer,
+- capacidad [[LLM/Transformer|Transformer]],
 
 emergen propiedades biológicas no supervisadas.
 
 Este punto es muy importante porque anticipa toda la línea posterior de:
 
-- ESM,
+- [[ESM-3/ESM-3|ESM]],
 - ProtTrans,
 - ProGen,
-- SaProt,
+- [[SAPROT/SAPROT|SaProt]],
 - ESMFold,
 - EvoDiff,
 - etc.
@@ -140,18 +140,18 @@ Este punto es muy importante porque anticipa toda la línea posterior de:
 
 # Arquitectura
 
-El modelo utiliza Transformers similares a BERT/GPT adaptados a proteínas.
+El modelo utiliza [[LLM/Transformer|Transformers]] similares a BERT/GPT adaptados a proteínas.
 
-La arquitectura aprende embeddings contextuales de aminoácidos usando self-attention.
+La arquitectura aprende [[BIO/CONCEPTOS AVANZADOS/Embedding de proteínas|embeddings contextuales]] de [[BIO/FUNDAMENTOS/Aminoácido|aminoácidos]] usando self-attention.
 
-El attention mechanism permite capturar:
+El [[LLM/Transformer|attention mechanism]] permite capturar:
 
 - dependencias largas,
 - relaciones estructurales,
 - patrones evolutivos,
 - contactos implícitos.
 
-El paper muestra que ciertas heads aprenden contactos estructurales reales aun sin supervisión estructural explícita.
+El paper muestra que ciertas heads aprenden [[LanguageModels/Contact prediction|contactos estructurales]] reales aun sin supervisión estructural explícita.
 
 Eso fue un resultado extremadamente importante históricamente.
 
@@ -159,17 +159,17 @@ Eso fue un resultado extremadamente importante históricamente.
 
 # Zero-shot mutation effect prediction
 
-La contribución principal es el uso de language modeling para predecir efectos mutacionales en zero-shot.
+La contribución principal es el uso de [[LLM/Transformer|language modeling]] para predecir [[BIO/MUTACIONES/Efecto de mutaciones|efectos mutacionales]] en [[BIO/CONCEPTOS AVANZADOS/Zero-shot prediction|zero-shot]].
 
 La idea matemática es relativamente simple.
 
-Dada una proteína wild-type:
+Dada una proteína [[BIO/MUTACIONES/Wild-type|wild-type]]:
 
 ```text
 WT sequence
 ```
 
-y una mutación:
+y una [[BIO/MUTACIONES/Mutación|mutación]]:
 
 ```text
 x_i → x_i'
@@ -182,11 +182,11 @@ $$
 \log P(x_i' \mid context) - \log P(x_i \mid context)  
 $$
 
-Si la mutación disminuye mucho la probabilidad, probablemente es deletérea.
+Si la [[BIO/MUTACIONES/Mutación|mutación]] disminuye mucho la probabilidad, probablemente es deletérea.
 
 Si mantiene coherencia contextual, probablemente es tolerada.
 
-Ese cambio de likelihood funciona como proxy de fitness biológico.
+Ese cambio de likelihood funciona como proxy de [[BIO/MUTACIONES/Fitness Biológico|fitness biológico]].
 
 ---
 
@@ -212,7 +212,7 @@ y aun así emerge capacidad funcional.
 
 Eso implica que:
 
-> evolución natural contiene información funcional suficiente para inferir fitness.
+> evolución natural contiene información funcional suficiente para inferir [[BIO/MUTACIONES/Fitness Biológico|fitness]].
 
 Ese es probablemente el insight más importante del paper.
 

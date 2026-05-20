@@ -42,14 +42,11 @@
     "/",
     "//images",
     "//Tags",
-    "//ESM-3",
     "//PAPERS",
+    "//TECNICAS",
     "//LLM",
     "//SAPROT",
-    "//PAPERS/PAPERS/LanguageModels",
-    "//PAPERS/PAPERS/DrugLLM",
-    "//BIO",
-    "//TECNICAS"
+    "//ESM-3"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

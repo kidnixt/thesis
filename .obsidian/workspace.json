@@ -11,14 +11,12 @@
             "id": "e1aff68c661be0cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "TECNICAS/INDEX.md",
-                "mode": "source",
-                "source": false
+                "path": "PAPERS"
               },
               "icon": "lucide-file",
-              "title": "INDEX"
+              "title": "PAPERS"
             }
           }
         ]
@@ -196,21 +194,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e1aff68c661be0cf",
+  "active": "e808951b014887e3",
   "lastOpenFiles": [
-    "TECNICAS/TECNICAS.md",
-    "SAPROT/INDEX.md",
-    "ESM-3/ESM-3.md",
-    "BIO/BIO.md",
     "SAPROT/SAPROT.md",
+    "TECNICAS/TECNICAS.md",
+    "PAPERS/PAPERS.md",
+    "BIO/BIO.md",
+    "ESM-3/ESM-3.md",
+    "LLM/LLM.md",
+    "TECNICAS/INDEX.md",
+    "SAPROT/INDEX.md",
     "ESM-3/INDEX.md",
     "BIO/INDEX.md",
-    "TECNICAS/INDEX.md",
     "LLM/INDEX.md",
     "BIO/FUNDAMENTOS/Proteína.md",
     "PAPERS/LanguageModels/INDEX.md",
-    "PAPERS/PAPERS.md",
-    "LLM/LLM.md",
     "PAPERS/DrugLLM/INDEX.md",
     "PAPERS/LanguageModels/UniParc y UniRef.md",
     "PAPERS/LanguageModels/Scaling laws en biología.md",

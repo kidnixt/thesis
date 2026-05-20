@@ -76,10 +76,13 @@
             "id": "072d5750ab0cd2bc",
             "type": "leaf",
             "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
         ],
@@ -194,7 +197,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c6c34f530ff43466",
+  "active": "e1aff68c661be0cf",
   "lastOpenFiles": [
     "SAPROT/SAPROT.md",
     "ESM-3/ESM-3.md",

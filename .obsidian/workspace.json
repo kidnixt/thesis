@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PAPERS/Language models enable zero-shot prediction of the effects of mutations on protein function.md",
+                "file": "BITACORA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Language models enable zero-shot prediction of the effects of mutations on protein function"
+              "title": "BITACORA"
             }
           }
         ]
@@ -198,9 +198,10 @@
   },
   "active": "e1aff68c661be0cf",
   "lastOpenFiles": [
-    "PAPERS/Language models enable zero-shot prediction of the effects of mutations on protein function.pdf",
     "PAPERS/Language models enable zero-shot prediction of the effects of mutations on protein function.md",
     "BITACORA.md",
+    "PAPERS/DrugLLM.md",
+    "PAPERS/Language models enable zero-shot prediction of the effects of mutations on protein function.pdf",
     "BIO/BIO.md",
     "SAPROT/SAPROT.md",
     "ESM-3/ESM-3.md",
@@ -209,7 +210,6 @@
     "ESM-3/TUTORIAL.md",
     "BIO/PROPIEDADES/Nivel de expresión génica.md",
     "BIO/CONCEPTOS AVANZADOS/CONCEPTOS AVANZADOS.md",
-    "PAPERS/DrugLLM.md",
     "PAPERS/DrugLLM.pdf",
     "PAPERS/Unconfirmed 781880.crdownload",
     "SAPROT/ANÁLISIS/Score de Mutación SaProt.md",

@@ -86,8 +86,34 @@ El objetivo de esta sesión no es únicamente ubicar funciones dentro del códig
 
 Como resultado esperado, se busca obtener una comprensión operativa de cómo SaProt asigna puntuaciones a secuencias y cómo construye su representación interna de proteínas, sentando una base sólida para análisis posteriores más complejos.
 
-### ** 15 de mayo, 2026**
+### **15 de mayo, 2026**
 
-### ** 19 de mayo, 2026**
+Durante la jornada se realizó la lectura y análisis del paper _DrugLLM: Few-shot molecular property optimization via a domain-specialized large language model_, con el objetivo de comprender nuevos enfoques basados en Large Language Models aplicados al diseño y optimización molecular.
 
-### ** 20 de mayo, 2026**
+La lectura se centró particularmente en entender el paradigma propuesto por el trabajo, donde la optimización molecular deja de tratarse como un problema clásico de predicción supervisada y pasa a formularse como una tarea autoregresiva de modificación molecular. Se analizaron conceptos relevantes como _Functional Group Tokenization (FGT)_, _Next Modification Prediction (NMP)_ y el uso de _few-shot learning_ para tareas de optimización química.
+
+Adicionalmente, se identificaron varios trabajos relacionados considerados relevantes para continuar profundizando en la línea de investigación vinculada a foundation models en biología molecular y química computacional. Estos papers fueron marcados como futuras referencias para incorporar posteriormente en la base de conocimiento de Obsidian y utilizar como apoyo teórico en el estudio de modelos de lenguaje aplicados a proteínas y diseño molecular.
+
+La actividad permitió ampliar el contexto conceptual de los modelos generativos biológicos modernos y establecer conexiones entre protein language models y enfoques recientes orientados a razonamiento molecular contextual.
+
+### ### **19 de mayo, 2026**
+
+Durante la jornada se realizó una sistematización técnica completa del paper _DrugLLM: Few-shot molecular property optimization via a domain-specialized large language model_, con el objetivo de integrar sus principales conceptos, aportes y resultados dentro de la base de conocimiento de la investigación.
+
+El trabajo consistió en elaborar un resumen detallado orientado a comprender tanto la arquitectura conceptual del modelo como su relevancia dentro del contexto actual de foundation models aplicados a química computacional y drug discovery. El análisis se enfocó especialmente en la representación molecular propuesta por el paper (_Functional Group Tokenization_), la formulación autoregresiva de modificaciones moleculares y el uso de _in-context learning_ para tareas de optimización molecular _few-shot_.
+
+También se revisaron los benchmarks experimentales presentados en el trabajo, incluyendo tareas de optimización fisicoquímica, predicción de actividad biológica y validaciones experimentales sobre inhibidores HCN2. Se analizaron además las limitaciones del enfoque, particularmente la ausencia de información estructural explícita y la dependencia de métricas proxy en varios benchmarks biológicos.
+
+Como parte de la sistematización, se establecieron conexiones conceptuales entre DrugLLM y los Protein Language Models estudiados previamente (como SaProt y ESM), especialmente en relación con el aprendizaje autoregresivo, representación contextual y emergent behavior en modelos entrenados sobre grandes volúmenes de datos biológicos.
+
+### ### **20 de mayo, 2026**
+
+Durante la jornada se realizó el análisis y resumen técnico del paper _Language Models Enable Zero-Shot Prediction of the Effects of Mutations on Protein Function_, considerado uno de los trabajos fundacionales en el área de Protein Language Models (PLMs).
+
+La revisión se centró en comprender cómo un modelo de lenguaje entrenado únicamente sobre secuencias proteicas puede adquirir información funcional y estructural suficiente como para predecir efectos mutacionales sin supervisión específica ni entrenamiento proteína-por-proteína. Se analizó particularmente el concepto de _zero-shot mutation effect prediction_, basado en diferencias de probabilidad contextual entre aminoácidos _wild type_ y variantes mutantes.
+
+Durante la lectura se profundizó en la relación entre evolución natural y aprendizaje estadístico, interpretando la hipótesis central del paper: que las restricciones evolutivas presentes en millones de secuencias contienen información implícita sobre estabilidad, estructura y función proteica. Asimismo, se revisó el uso de Transformers aplicados a secuencias biológicas y el surgimiento de propiedades estructurales emergentes a medida que aumenta la escala del modelo y del dataset de entrenamiento.
+
+También se estudiaron los benchmarks utilizados para evaluar predicción de efectos mutacionales sobre datasets de _Deep Mutational Scanning (DMS)_ y las comparaciones realizadas frente a métodos evolutivos clásicos como SIFT, EVMutation y DeepSequence.
+
+La actividad permitió contextualizar históricamente el surgimiento de los foundation models biológicos modernos y comprender el origen conceptual de métricas de mutation scoring posteriormente utilizadas en modelos como ESM-1b, ESM-2 y SaProt.

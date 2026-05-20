@@ -98,9 +98,7 @@ dependiendo del entrenamiento.
 La intuición es exactamente la misma que en NLP:
 
 - ciertas palabras son coherentes en contexto,
-    
 - ciertos aminoácidos son coherentes en contexto estructural/evolutivo.
-    
 
 ---
 
@@ -123,30 +121,20 @@ Esto era enorme para la época.
 El paper muestra que al aumentar:
 
 - cantidad de secuencias,
-    
 - tamaño del modelo,
-    
 - capacidad Transformer,
-    
 
 emergen propiedades biológicas no supervisadas.
 
 Este punto es muy importante porque anticipa toda la línea posterior de:
 
 - ESM,
-    
 - ProtTrans,
-    
 - ProGen,
-    
 - SaProt,
-    
 - ESMFold,
-    
 - EvoDiff,
-    
 - etc.
-    
 
 ---
 
@@ -159,13 +147,9 @@ La arquitectura aprende embeddings contextuales de aminoácidos usando self-atte
 El attention mechanism permite capturar:
 
 - dependencias largas,
-    
 - relaciones estructurales,
-    
 - patrones evolutivos,
-    
 - contactos implícitos.
-    
 
 El paper muestra que ciertas heads aprenden contactos estructurales reales aun sin supervisión estructural explícita.
 
@@ -194,10 +178,9 @@ x_i → x_i'
 el modelo calcula cuánto cambia la probabilidad contextual.
 
 El score mutacional básico es:
-
-[  
+$$  
 \log P(x_i' \mid context) - \log P(x_i \mid context)  
-]
+$$
 
 Si la mutación disminuye mucho la probabilidad, probablemente es deletérea.
 
@@ -244,22 +227,15 @@ Estos datasets contienen miles de mutaciones medidas experimentalmente para prot
 El benchmark incluye proteínas como:
 
 - TEM-1 β-lactamase
-    
 - influenza hemagglutinin
-    
 - ubiquitin
-    
 - GFP
-    
 - HSP90
-    
 
 La métrica principal es correlación entre:
 
 - score predicho por el modelo
-    
 - fitness experimental real
-    
 
 ---
 
@@ -268,11 +244,8 @@ La métrica principal es correlación entre:
 El paper muestra que los PLMs grandes superan o igualan métodos evolutivos clásicos como:
 
 - SIFT
-    
 - EVMutation
-    
 - DeepSequence
-    
 
 sin necesidad de entrenar modelos específicos por proteína.
 
@@ -281,11 +254,8 @@ Eso es MUY importante.
 Los métodos anteriores requerían:
 
 - construir MSAs,
-    
 - entrenar modelos por familia,
-    
 - pipelines especializados.
-    
 
 El language model:
 
@@ -319,9 +289,9 @@ Utiliza Potts models sobre MSA.
 
 Captura interacciones de segundo orden:
 
-[  
+$$
 E(x)=\sum_i h_i(x_i)+\sum_{i,j}J_{ij}(x_i,x_j)  
-]
+$$
 
 Puede modelar covariación, pero requiere MSAs profundas y específicas.
 
@@ -336,11 +306,8 @@ Captura interacciones de orden superior.
 Pero nuevamente:
 
 - requiere alineamientos,
-    
 - es proteína-específico,
-    
 - no generaliza globalmente.
-    
 
 ---
 
@@ -369,24 +336,17 @@ Otro hallazgo importante es que los embeddings y attention maps capturan informa
 El paper muestra correlación entre:
 
 - regiones funcionales,
-    
 - sitios de binding,
-    
 - restricciones evolutivas,
-    
 - preferencias aminoacídicas.
-    
 
 Incluso sin supervisión estructural explícita, emergen patrones relacionados con folding y contactos.
 
 Esto conecta directamente con trabajos posteriores como:
 
 - ESMFold
-    
 - MSA Transformer
-    
 - AlphaFold-era PLMs
-    
 
 ---
 
@@ -401,20 +361,14 @@ Esto replica fenómenos observados en NLP.
 Modelos pequeños capturan:
 
 - estadística local,
-    
 - motifs simples.
-    
 
 Modelos grandes empiezan a capturar:
 
 - estructura global,
-    
 - función,
-    
 - restricciones evolutivas,
-    
 - fitness landscapes.
-    
 
 Este paper fue una de las primeras demostraciones fuertes de scaling laws en proteínas.
 
@@ -427,15 +381,10 @@ Aunque el trabajo fue revolucionario, tiene varias limitaciones importantes.
 La primera es que el modelo utiliza únicamente secuencia. No incorpora explícitamente:
 
 - estructura 3D,
-    
 - dinámica molecular,
-    
 - docking,
-    
 - interacciones proteína-proteína,
-    
 - contexto celular.
-    
 
 Además, los scores mutacionales son proxies probabilísticos, no mediciones físicas reales.
 
@@ -452,23 +401,14 @@ Este paper es extremadamente importante históricamente porque prácticamente in
 Muchos trabajos posteriores derivan conceptualmente de aquí:
 
 - ESM-1b
-    
 - ESM-2
-    
 - MSA Transformer
-    
 - ProtTrans
-    
 - ProGen
-    
 - SaProt
-    
 - EvoDiff
-    
 - ProteinGPT
-    
 - ESMFold
-    
 
 La idea fundamental es siempre similar:
 
@@ -485,32 +425,24 @@ La idea de mutation scoring que aparece en SaProt proviene conceptualmente de aq
 El scoring mutacional se basa en comparar likelihoods contextuales entre:
 
 - aminoácido wild-type
-    
 - aminoácido mutado
-    
 
 Por ejemplo:
-
-[  
+$$
 \Delta score =  
 \log P(mutante) -  
 \log P(wildtype)  
-]
+$$
 
 Ese framework se volvió estándar en PLMs.
 
 La diferencia es que modelos posteriores agregan:
 
 - estructura,
-    
 - información multimodal,
-    
 - MSAs,
-    
 - coordenadas 3D,
-    
 - tokens estructurales.
-    
 
 Pero el núcleo conceptual aparece en este paper.
 
@@ -541,13 +473,9 @@ Este trabajo representa uno de los puntos de transición entre bioinformática c
 Antes del paper, la mayoría de métodos eran:
 
 - especializados,
-    
 - proteína-específicos,
-    
 - dependientes de MSAs,
-    
 - entrenados tarea por tarea.
-    
 
 Después de este trabajo empieza la idea moderna de:
 

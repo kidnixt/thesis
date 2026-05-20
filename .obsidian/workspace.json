@@ -11,12 +11,17 @@
             "id": "e1aff68c661be0cf",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "canvas",
               "state": {
-                "path": "PAPERS"
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "PAPERS"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           }
         ]
@@ -194,11 +199,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e808951b014887e3",
+  "active": "e1aff68c661be0cf",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "PAPERS/PAPERS.md",
     "SAPROT/SAPROT.md",
     "TECNICAS/TECNICAS.md",
-    "PAPERS/PAPERS.md",
     "BIO/BIO.md",
     "ESM-3/ESM-3.md",
     "LLM/LLM.md",
@@ -221,7 +227,6 @@
     "PAPERS/LanguageModels/Epistasis.md",
     "PAPERS/LanguageModels/EVMutation.md",
     "PAPERS/LanguageModels/DeepSequence.md",
-    "PAPERS/LanguageModels/Deep Mutational Scanning.md",
     "PAPERS/LanguageModels/sedsreHzI",
     "PAPERS/LanguageModels/sedAEnTSC",
     "PAPERS/LanguageModels/sedN4L4fA",

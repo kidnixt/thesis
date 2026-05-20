@@ -40,13 +40,10 @@
   "expandedSpaces": [
     "//SAPROT/SAPROT/ANÁLISIS",
     "/",
-    "//PAPERS",
     "//images",
     "//Tags",
-    "//TECNICAS",
-    "//SAPROT",
     "//ESM-3",
-    "//BIO"
+    "//PAPERS"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

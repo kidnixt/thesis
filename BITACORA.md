@@ -87,3 +87,7 @@ El objetivo de esta sesión no es únicamente ubicar funciones dentro del códig
 Como resultado esperado, se busca obtener una comprensión operativa de cómo SaProt asigna puntuaciones a secuencias y cómo construye su representación interna de proteínas, sentando una base sólida para análisis posteriores más complejos.
 
 ### ** 15 de mayo, 2026**
+
+### ** 19 de mayo, 2026**
+
+### ** 20 de mayo, 2026**

@@ -11,12 +11,12 @@
             "id": "e1aff68c661be0cf",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "pdf",
               "state": {
-                "path": "BIO"
+                "file": "PAPERS/Language models enable zero-shot prediction of the effects of mutations on protein function.pdf"
               },
-              "icon": "lucide-file",
-              "title": "BIO"
+              "icon": "lucide-file-text",
+              "title": "Language models enable zero-shot prediction of the effects of mutations on protein function"
             }
           }
         ]
@@ -73,7 +73,7 @@
             }
           },
           {
-            "id": "072d5750ab0cd2bc",
+            "id": "fc31b57921cdc8a3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -199,6 +199,7 @@
   },
   "active": "e1aff68c661be0cf",
   "lastOpenFiles": [
+    "BIO/BIO.md",
     "SAPROT/SAPROT.md",
     "ESM-3/ESM-3.md",
     "TECNICAS/TECNICAS.md",
@@ -229,7 +230,6 @@
     "LLM/Masked Language Model.md",
     "LLM/Log-Likelihood Ratio.md",
     "LLM/Foldseek.md",
-    "LLM/3Di.md",
     "LLM",
     "Tags",
     "SAPROT/ANÁLISIS",

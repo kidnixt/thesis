@@ -11,17 +11,12 @@
             "id": "e1aff68c661be0cf",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "pdf",
               "state": {
-                "file": "Untitled.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "PAPERS/DrugLLM.pdf"
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "icon": "lucide-file-text",
+              "title": "DrugLLM"
             }
           }
         ]
@@ -78,16 +73,13 @@
             }
           },
           {
-            "id": "fb17aaf5d096b637",
+            "id": "5d05bc9ec9ecee75",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -204,6 +196,7 @@
   },
   "active": "e1aff68c661be0cf",
   "lastOpenFiles": [
+    "PAPERS/DrugLLM.md",
     "Untitled.canvas",
     "PAPERS/PAPERS.md",
     "SAPROT/SAPROT.md",

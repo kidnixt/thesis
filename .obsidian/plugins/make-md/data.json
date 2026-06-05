@@ -42,11 +42,7 @@
     "/",
     "//images",
     "//Tags",
-    "//PAPERS",
-    "//TECNICAS",
-    "//LLM",
-    "//SAPROT",
-    "//ESM-3"
+    "//PAPERS"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

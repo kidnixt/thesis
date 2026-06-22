@@ -73,16 +73,13 @@
             }
           },
           {
-            "id": "5d05bc9ec9ecee75",
+            "id": "f89096f167c3904e",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -200,6 +197,9 @@
   "active": "e1aff68c661be0cf",
   "lastOpenFiles": [
     "PAPERS/DrugLLM.md",
+    "PAPERS/DrugLLM/In-context learning.md",
+    "PAPERS/DrugLLM/NMP.md",
+    "PAPERS/DrugLLM.pdf",
     "Untitled.canvas",
     "PAPERS/PAPERS.md",
     "SAPROT/SAPROT.md",
@@ -224,8 +224,6 @@
     "PAPERS/LanguageModels/Foundation models.md",
     "PAPERS/LanguageModels/Fitness landscape.md",
     "PAPERS/LanguageModels/Epistasis.md",
-    "PAPERS/LanguageModels/EVMutation.md",
-    "PAPERS/LanguageModels/DeepSequence.md",
     "PAPERS/LanguageModels/sedsreHzI",
     "PAPERS/LanguageModels/sedAEnTSC",
     "PAPERS/LanguageModels/sedN4L4fA",
@@ -235,7 +233,6 @@
     "PAPERS/LanguageModels/sedXm2WJl",
     "PAPERS/LanguageModels/sedkFuO1f",
     "PAPERS/LanguageModels/sedWFItf7",
-    "PAPERS/LanguageModels/sedeunF5F",
     "Attachments/Pasted image 20260325160307.png",
     "Attachments/Pasted image 20260325160247.png"
   ]
